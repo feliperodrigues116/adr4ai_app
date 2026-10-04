@@ -1,0 +1,12 @@
+{
+  "user_story_id": "SYS01-US01",
+  "pattern_id": "001",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "classification": "insufficient_information",
+  "requirement_refs": [
+    "SYS01-US01-AC01",
+    "SYS01-US01-AC02"
+  ],
+  "rationale": "The criteria require answers grounded in official documents and a refusal when no document provides guidance. They do not indicate that ML predictions are involved, so the need to safeguard such predictions cannot be established."
+}

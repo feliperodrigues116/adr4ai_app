@@ -1,0 +1,12 @@
+{
+  "user_story_id": "SYS01-US02",
+  "selected_patterns": [
+    {
+      "pattern_id": "003",
+      "requirement_refs": [
+        "SYS01-US02-AC01"
+      ],
+      "rationale": "O registro de chamados por integração exige que o sistema solicite a outro sistema um serviço, evidenciando a relação entre consumidor e provedor de serviços abordada pelo padrão Client-Server."
+    }
+  ]
+}

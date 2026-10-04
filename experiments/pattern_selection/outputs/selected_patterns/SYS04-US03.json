@@ -1,0 +1,64 @@
+{
+  "user_story_id": "SYS04-US03",
+  "selected_patterns": [
+    {
+      "pattern_id": "001",
+      "requirement_refs": [
+        "SYS04-US03",
+        "SYS04-US03-AC02"
+      ],
+      "rationale": "A história exige avaliar recomendações dos modelos antes de sua aplicação na ETA real, e o critério limita sua aplicação ao ambiente simulado. Essa restrição evidencia a necessidade de proteger a operação real dos efeitos diretos das saídas dos modelos."
+    },
+    {
+      "pattern_id": "003",
+      "requirement_refs": [
+        "SYS04-US03",
+        "SYS04-US03-AC01",
+        "SYS04-US03-AC04"
+      ],
+      "rationale": "A história prevê conectar modelos ao gêmeo digital, e os critérios exigem fornecer-lhes variáveis e permitir comparar diferentes modelos no mesmo cenário. Isso evidencia múltiplos consumidores de dados de uma mesma aplicação, necessidade abordada pelo padrão Client-Server."
+    },
+    {
+      "pattern_id": "014",
+      "requirement_refs": [
+        "SYS04-US03",
+        "SYS04-US03-AC04"
+      ],
+      "rationale": "A necessidade de conectar modelos de IA ao gêmeo digital e comparar diferentes modelos no mesmo cenário evidencia a distinção entre os modelos e as funções de simulação e avaliação do sistema. Essa separação corresponde ao propósito do padrão."
+    },
+    {
+      "pattern_id": "015",
+      "requirement_refs": [
+        "SYS04-US03",
+        "SYS04-US03-AC02"
+      ],
+      "rationale": "A necessidade de avaliar recomendações de modelos antes de aplicá-las à ETA real, junto à exigência de que seus comandos atuem somente no ambiente simulado, evidencia uma proteção que não depende da segurança dos próprios modelos. Isso corresponde à intenção do padrão de limitar externamente os efeitos desses modelos."
+    },
+    {
+      "pattern_id": "028",
+      "requirement_refs": [
+        "SYS04-US03",
+        "SYS04-US03-AC01",
+        "SYS04-US03-AC02",
+        "SYS04-US03-AC03"
+      ],
+      "rationale": "A história exige avaliar recomendações de modelos antes de sua aplicação à ETA real. O uso das variáveis previstas para o ambiente real, a aplicação das recomendações apenas na simulação e o registro dos resultados sustentam a verificação do comportamento dos modelos no fluxo completo, preocupação central de End-To-End Tests."
+    },
+    {
+      "pattern_id": "036",
+      "requirement_refs": [
+        "SYS04-US03-AC03",
+        "SYS04-US03-AC04"
+      ],
+      "rationale": "Comparar modelos no mesmo cenário e registrar as entradas, saídas e resultados de cada execução evidencia a necessidade de testes repetíveis de modelos, alinhada ao propósito do Replay."
+    },
+    {
+      "pattern_id": "043",
+      "requirement_refs": [
+        "SYS04-US03",
+        "SYS04-US03-AC04"
+      ],
+      "rationale": "A necessidade de conectar e comparar diferentes modelos no mesmo cenário simulado evidencia a troca flexível de modelos em um contexto comum, que é o problema tratado pelo Strategy Pattern."
+    }
+  ]
+}

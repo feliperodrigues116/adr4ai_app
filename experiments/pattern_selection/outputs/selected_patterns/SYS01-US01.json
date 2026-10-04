@@ -1,0 +1,28 @@
+{
+  "user_story_id": "SYS01-US01",
+  "selected_patterns": [
+    {
+      "pattern_id": "001",
+      "requirement_refs": [
+        "SYS01-US01-AC01",
+        "SYS01-US01-AC02"
+      ],
+      "rationale": "The criteria require answers to follow official documents and require the system to withhold guidance when no document supports it. This establishes a safeguard against unsupported responses, consistent with the pattern’s intent."
+    },
+    {
+      "pattern_id": "016",
+      "requirement_refs": [
+        "SYS01-US01-AC02"
+      ],
+      "rationale": "O critério exige que o sistema se abstenha de orientar o atendente quando não houver documento que sustente a resposta, em vez de fornecer uma orientação sem respaldo. Isso corresponde à rejeição de uma resposta quando falta base suficiente para oferecê-la."
+    },
+    {
+      "pattern_id": "060",
+      "requirement_refs": [
+        "SYS01-US01-AC01",
+        "SYS01-US01-AC02"
+      ],
+      "rationale": "Os critérios condicionam a resposta aos documentos oficiais e exigem que o sistema deixe de fornecer orientação quando nenhum documento a sustenta. Isso evidencia a necessidade de controlar respostas para evitar orientações sem fundamento, alinhada ao propósito do padrão."
+    }
+  ]
+}

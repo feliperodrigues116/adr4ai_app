@@ -1,0 +1,51 @@
+{
+  "user_story_id": "SYS02-US01",
+  "selected_patterns": [
+    {
+      "pattern_id": "002",
+      "requirement_refs": [
+        "SYS02-US01-AC02",
+        "SYS02-US01-AC03",
+        "SYS02-US01-AC05"
+      ],
+      "rationale": "Os critérios exigem operações distintas sobre os dados do documento: escolher o layout apropriado, substituir variáveis pelo conteúdo gerado e combinar os textos em um resultado legível. Essas transformações sucessivas correspondem à necessidade de processamento em etapas abordada por Pipes and Filters."
+    },
+    {
+      "pattern_id": "004",
+      "requirement_refs": [
+        "SYS02-US01-AC01",
+        "SYS02-US01-AC02",
+        "SYS02-US01-AC03"
+      ],
+      "rationale": "The criteria distinguish generated content from its layout and require the layout to vary by document type. This provides evidence of a need to keep data separate from its representation, which is the concern addressed by MVC."
+    },
+    {
+      "pattern_id": "014",
+      "requirement_refs": [
+        "SYS02-US01-AC01",
+        "SYS02-US01-AC02",
+        "SYS02-US01-AC03",
+        "SYS02-US01-AC05"
+      ],
+      "rationale": "Os critérios distinguem o conteúdo gerado pelo modelo de IA das regras para selecionar o layout cadastrado, substituir variáveis e compor o documento. Essa distinção entre responsabilidades de ML e lógica de negócio corresponde à preocupação central do padrão."
+    },
+    {
+      "pattern_id": "045",
+      "requirement_refs": [
+        "SYS02-US01-AC01",
+        "SYS02-US01-AC02",
+        "SYS02-US01-AC03",
+        "SYS02-US01-AC05"
+      ],
+      "rationale": "Os critérios distinguem o conteúdo gerado para as variáveis do layout que representa o documento e exigem combiná-los conforme o tipo de documento. Essa distinção entre a composição do documento e sua representação corresponde à necessidade tratada pelo Builder."
+    },
+    {
+      "pattern_id": "050",
+      "requirement_refs": [
+        "SYS02-US01-AC02",
+        "SYS02-US01-AC05"
+      ],
+      "rationale": "A substituição das variáveis e a composição do documento dependem do conteúdo gerado pelo modelo de IA. Assim, essa etapa do fluxo não pode prosseguir até que a geração termine, o que corresponde à necessidade tratada pelo padrão."
+    }
+  ]
+}

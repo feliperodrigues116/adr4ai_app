@@ -1,0 +1,21 @@
+{
+  "user_story_id": "SYS02-US03",
+  "selected_patterns": [
+    {
+      "pattern_id": "002",
+      "requirement_refs": [
+        "SYS02-US03-AC01",
+        "SYS02-US03-AC02",
+        "SYS02-US03-AC03"
+      ],
+      "rationale": "Os critérios exigem tarefas distintas sobre o documento: compilar suas partes, corrigir a gramática e informar as palavras corrigidas. Esse processamento em etapas, com resultados relacionados, corresponde à necessidade tratada por Pipes and Filters."
+    },
+    {
+      "pattern_id": "045",
+      "requirement_refs": [
+        "SYS02-US03-AC01"
+      ],
+      "rationale": "A exigência de compilar todas as partes em um documento completo evidencia uma construção por partes, necessidade abordada pelo Builder."
+    }
+  ]
+}

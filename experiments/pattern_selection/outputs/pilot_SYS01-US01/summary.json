@@ -1,0 +1,14 @@
+{
+  "user_story_id": "SYS01-US01",
+  "expected_assessments": 70,
+  "valid_assessments": 70,
+  "applicable": 3,
+  "not_applicable": 2,
+  "insufficient_information": 65,
+  "failed": 0,
+  "applicable_pattern_ids": [
+    "001",
+    "016",
+    "060"
+  ]
+}

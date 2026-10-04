@@ -1,0 +1,12 @@
+{
+  "user_story_id": "SYS01-US01",
+  "pattern_id": "001",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "classification": "applicable",
+  "requirement_refs": [
+    "SYS01-US01-AC01",
+    "SYS01-US01-AC02"
+  ],
+  "rationale": "The requirements explicitly guard against unsupported answers: responses must follow official documents, and the system must decline to help when no document provides guidance. This aligns with the pattern’s purpose of checking whether an answer is acceptable before using it."
+}

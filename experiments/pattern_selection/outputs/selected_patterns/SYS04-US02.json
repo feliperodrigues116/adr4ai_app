@@ -1,0 +1,23 @@
+{
+  "user_story_id": "SYS04-US02",
+  "selected_patterns": [
+    {
+      "pattern_id": "003",
+      "requirement_refs": [
+        "SYS04-US02",
+        "SYS04-US02-AC01",
+        "SYS04-US02-AC03"
+      ],
+      "rationale": "A história exige que o simulador forneça variáveis e receba comandos para integração com CLP, supervisório e aplicações externas. Os critérios confirmam a disponibilização de dados e o recebimento de comandos, caracterizando uma interface de serviços acessada por outras aplicações, necessidade atendida pelo padrão Client-Server."
+    },
+    {
+      "pattern_id": "028",
+      "requirement_refs": [
+        "SYS04-US02",
+        "SYS04-US02-AC03",
+        "SYS04-US02-AC04"
+      ],
+      "rationale": "A história exige testar a integração do simulador com CLP, supervisório e aplicações externas. Verificar comandos e seus efeitos na simulação, além da perda e do restabelecimento da comunicação, envolve o comportamento integrado que testes end-to-end avaliam."
+    }
+  ]
+}

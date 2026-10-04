@@ -1,0 +1,12 @@
+{
+  "user_story_id": "SYS03-US01",
+  "selected_patterns": [
+    {
+      "pattern_id": "001",
+      "requirement_refs": [
+        "SYS03-US01-AC02"
+      ],
+      "rationale": "The AI system must determine whether the document photo belongs to the customer who submitted the selfie. An incorrect AI judgment could undermine this identity check, making prediction reliability a security concern addressed by the pattern."
+    }
+  ]
+}

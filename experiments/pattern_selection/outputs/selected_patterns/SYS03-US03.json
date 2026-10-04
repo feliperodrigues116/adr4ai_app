@@ -1,0 +1,21 @@
+{
+  "user_story_id": "SYS03-US03",
+  "selected_patterns": [
+    {
+      "pattern_id": "003",
+      "requirement_refs": [
+        "SYS03-US03-AC01",
+        "SYS03-US03-AC02"
+      ],
+      "rationale": "O sistema IA precisa registrar a baixa e seu motivo no sistema Comercial, que mantém o serviço e é responsável por notificar o cliente. Isso evidencia uma aplicação utilizando uma função de outra aplicação, relação atendida pelo padrão Client-Server."
+    },
+    {
+      "pattern_id": "050",
+      "requirement_refs": [
+        "SYS03-US03",
+        "SYS03-US03-AC01"
+      ],
+      "rationale": "A baixa do serviço como improcedente depende de a IA confirmar que o documento não pertence ao cliente. Essa confirmação é uma condição para prosseguir com a atualização do serviço, alinhando-se à necessidade de aguardar o resultado da avaliação antes da próxima etapa."
+    }
+  ]
+}

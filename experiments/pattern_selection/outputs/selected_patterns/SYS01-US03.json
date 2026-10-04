@@ -1,0 +1,28 @@
+{
+  "user_story_id": "SYS01-US03",
+  "selected_patterns": [
+    {
+      "pattern_id": "001",
+      "requirement_refs": [
+        "SYS01-US03-AC01",
+        "SYS01-US03-AC02"
+      ],
+      "rationale": "The response must be limited to the company catalog and identify the document, version, and section supporting a retrieved passage. These constraints establish a need to safeguard responses against unsupported information, which aligns with the pattern’s intent."
+    },
+    {
+      "pattern_id": "013",
+      "requirement_refs": [
+        "SYS01-US03",
+        "SYS01-US03-AC01"
+      ],
+      "rationale": "A exigência de mostrar as fontes e identificar documento, versão e seção do trecho recuperado expressa uma necessidade de transparência sobre a origem das respostas, relacionada à interpretabilidade e explicabilidade abordadas pelo padrão."
+    },
+    {
+      "pattern_id": "060",
+      "requirement_refs": [
+        "SYS01-US03-AC02"
+      ],
+      "rationale": "O critério limita as respostas ao conteúdo do catálogo da empresa, estabelecendo uma regra para controlar o que pode ser informado. Isso corresponde à finalidade do padrão de restringir respostas com base em regras."
+    }
+  ]
+}

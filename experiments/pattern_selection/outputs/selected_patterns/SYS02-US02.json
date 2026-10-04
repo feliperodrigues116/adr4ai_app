@@ -1,0 +1,43 @@
+{
+  "user_story_id": "SYS02-US02",
+  "selected_patterns": [
+    {
+      "pattern_id": "001",
+      "requirement_refs": [
+        "SYS02-US02-AC01"
+      ],
+      "rationale": "AC01 requires text revisions to preserve the artifact’s context and purpose. This is an explicit concern about incorrect output, which aligns with the pattern’s intent to safeguard against harmful results from an automated component."
+    },
+    {
+      "pattern_id": "002",
+      "requirement_refs": [
+        "SYS02-US02",
+        "SYS02-US02-AC03"
+      ],
+      "rationale": "A história exige corrigir e adequar textos, enquanto o critério prevê reformular, resumir ou expandir conteúdo. Essa variedade de tarefas de processamento textual corresponde à necessidade abordada pelo padrão."
+    },
+    {
+      "pattern_id": "060",
+      "requirement_refs": [
+        "SYS02-US02-AC01",
+        "SYS02-US02-AC03"
+      ],
+      "rationale": "The user must be able to select how the text is transformed—reformulated, summarized, or expanded—while the resulting text must preserve the artifact’s context and purpose. These are explicit needs to control output behavior and constrain unacceptable results, which align with the pattern’s intent."
+    },
+    {
+      "pattern_id": "064",
+      "requirement_refs": [
+        "SYS02-US02",
+        "SYS02-US02-AC03"
+      ],
+      "rationale": "A história solicita o aprimoramento automático de textos, e o critério AC03 permite ao usuário solicitar reformulações, resumos ou expansões conforme o contexto. Isso evidencia uma necessidade de enriquecimento de conteúdo sob demanda, alinhada à intenção do padrão."
+    },
+    {
+      "pattern_id": "070",
+      "requirement_refs": [
+        "SYS02-US02-AC03"
+      ],
+      "rationale": "O critério prevê objetivos distintos para o texto — reformular, resumir ou expandir — conforme a operação solicitada pelo usuário. Essa variação do resultado esperado por condição corresponde à necessidade tratada pelo padrão."
+    }
+  ]
+}

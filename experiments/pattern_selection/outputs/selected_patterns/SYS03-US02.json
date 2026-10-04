@@ -1,0 +1,52 @@
+{
+  "user_story_id": "SYS03-US02",
+  "selected_patterns": [
+    {
+      "pattern_id": "001",
+      "requirement_refs": [
+        "SYS03-US02",
+        "SYS03-US02-AC01",
+        "SYS03-US02-AC03"
+      ],
+      "rationale": "A confirmação pelo sistema IA de que o documento pertence ao cliente determina a mudança de status e a continuidade do atendimento. Como essa decisão automatizada envolve a titularidade do documento e libera etapas posteriores, ela apresenta o risco de validação incorreta que o padrão busca mitigar."
+    },
+    {
+      "pattern_id": "003",
+      "requirement_refs": [
+        "SYS03-US02-AC01",
+        "SYS03-US02-AC02",
+        "SYS03-US02-AC03"
+      ],
+      "rationale": "O sistema IA precisa se comunicar com o sistema Comercial para alterar o status do atendimento; a partir dessa alteração, o sistema Comercial comunica o cliente e dá continuidade à programação. Isso evidencia a interação entre um sistema que solicita uma operação e outro que a realiza e mantém o atendimento."
+    },
+    {
+      "pattern_id": "014",
+      "requirement_refs": [
+        "SYS03-US02",
+        "SYS03-US02-AC01",
+        "SYS03-US02-AC02",
+        "SYS03-US02-AC03"
+      ],
+      "rationale": "A confirmação do documento pelo sistema IA desencadeia atividades de negócio distintas: a alteração do status no sistema Comercial, a comunicação ao cliente e a programação do atendimento. Essa divisão de responsabilidades entre a validação por IA e o fluxo comercial corresponde à necessidade de distinguir componentes de IA da lógica de negócio."
+    },
+    {
+      "pattern_id": "044",
+      "requirement_refs": [
+        "SYS03-US02-AC01",
+        "SYS03-US02-AC02",
+        "SYS03-US02-AC03"
+      ],
+      "rationale": "A alteração do status do atendimento para PENDENTE DE EXECUÇÃO determina as ações seguintes do sistema Comercial: comunicar o cliente e prosseguir com a programação. Isso evidencia comportamento associado à mudança de estado."
+    },
+    {
+      "pattern_id": "050",
+      "requirement_refs": [
+        "SYS03-US02",
+        "SYS03-US02-AC01",
+        "SYS03-US02-AC02",
+        "SYS03-US02-AC03"
+      ],
+      "rationale": "A história condiciona a alteração do status à confirmação, pelo sistema IA, de que o documento pertence ao cliente. Os critérios vinculam a comunicação ao cliente e a programação do atendimento à mudança de status. Assim, o resultado da validação é necessário antes que o fluxo avance."
+    }
+  ]
+}
