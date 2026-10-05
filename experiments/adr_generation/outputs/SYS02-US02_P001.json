@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS02-US02",
+  "pattern_id": "001",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_0bb0e1aff281cd02006ac30970641c87d1842c82a7434bd21a",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "000b82f1bc2d468fa5745720eeab2d6c073fef3eb830c9b27a4c345d977168fe",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Rule-Based Safeguards for Document Revisions",
+    "context": "The assistant must improve user-provided text, including corrections and adjustments to technical-legal conventions. It must also support previously standardized document types and allow users to rephrase, summarize, or expand content. These changes must preserve the context and purpose of the resulting artifact, while automated revisions may produce incorrect results.",
+    "decision": "We will place deterministic, rule-based safeguards between automated text revision and acceptance of the revised content. The safeguards will check proposed corrections, adjustments, rephrasings, summaries, and expansions against conditions for preserving the artifact’s context and purpose, and will prevent revisions that fail those checks from being applied.",
+    "status": "Proposed",
+    "consequences": "The safeguards will reduce the risk of accepting revisions that change an artifact’s context or purpose, but they cannot guarantee that every accepted revision is correct. They will also make the architecture more complex and may prevent some acceptable revisions when those revisions fail the checks."
+  }
+}

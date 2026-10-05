@@ -8,6 +8,11 @@ working directory with Python 3.10 or later:
 python research_results/compile_results.py
 ```
 
+The command above reconstructs the original Study 1 CSVs and replaces the
+ADR-enriched main CSV with its original columns. To reproduce the final
+ADR-integrated datasets, run the compilation command below afterward. The
+original Study 1 backup is preserved independently.
+
 The script uses only the standard library and reconstructs both UTF-8 CSV files
 deterministically from the existing sources, validating all expected counts,
 identifiers, evidence ownership, catalog fields, and overlap before writing.
@@ -58,3 +63,39 @@ three-digit applicable pattern IDs (empty for zero patterns), and the count also
 present in final RAG Top-5. Both CSV files sort stories by stable ID; the main CSV
 then sorts patterns numerically. CSV quoting preserves embedded newlines and
 punctuation without translating, correcting, or rewriting source content.
+
+## ADR generation and integration
+
+Study 1 exhaustively assessed 840 User Story × Pattern combinations. Its 36
+applicable pairs became the input to ADR generation, with one independent
+generation call per pair and one ADR per applicable pair. The final count is
+36 ADRs, including the approved SYS01-US01 × Pattern 001 pilot. ADR status was
+added deterministically as `Proposed`. A technical connection failure for
+SYS04-US03 × Pattern 003 required an explicitly authorized second attempt;
+the original failure remains execution metadata and is not an additional ADR.
+
+`adr_generation_results.csv` joins the original Study 1 fields with the stored
+ADR components and model, reasoning effort, and response ID metadata by
+`(user_story_id, pattern_id)`. `pattern_selection_results.csv` now includes each
+corresponding complete ADR in its sole new final column, `adr`, formatted in
+Title, Status, Context, Decision, Consequences order. All original columns and
+cell values are preserved. `pattern_selection_results_before_adr.csv` is a
+byte-for-byte backup of the Study 1 result before ADR integration.
+
+ADR text is copied exactly as generated, including language variation; it is
+not translated, normalized, corrected, or rewritten during compilation. Empty
+catalog fields remain empty. Attempt and failure records are excluded from
+the research dataset.
+
+Reproduce both final CSVs locally with:
+
+```bash
+python -B research_results/compile_adr_results.py
+```
+
+This standard-library script reads the preserved Study 1 backup and the 36
+immutable top-level ADR JSON outputs in `experiments/adr_generation/outputs/`.
+It validates all expected pairs, ADR fields, configuration, Structured Outputs
+metadata, and source and prompt hashes before writing either dataset. It makes
+zero API calls and does not regenerate ADRs or modify experimental artifacts.
+Reruns produce byte-for-byte identical CSVs.

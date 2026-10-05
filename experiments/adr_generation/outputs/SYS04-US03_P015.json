@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS04-US03",
+  "pattern_id": "015",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_06745be229fccaab006ac30d00ee4487d189b10e5c862f9bb3",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "adc04f91aed778867a1be95375f35f208296a37d2f55ffdbd3c6399e0701f36e",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Simulation-Only Boundary for Model Outputs",
+    "context": "Data scientists and control engineers need to evaluate recommendations from control and AI models in the digital twin before applying them to the real ETA. Models must receive the variables expected in the real environment, but their commands or recommendations must affect only the simulation. Each execution must also be recorded so different models can be compared using the same scenario.",
+    "decision": "We will establish a boundary around connected models that makes the digital twin, rather than the models, responsible for limiting their effects to the simulated environment. The boundary will provide the expected variables to the models, apply their commands or recommendations only in the simulation, and record each execution's inputs, outputs, and results for comparison under the same scenario.",
+    "status": "Proposed",
+    "consequences": "Models can be evaluated without their outputs affecting the real ETA, and recorded executions will support comparisons under a common scenario. The boundary adds architectural complexity and must be maintained as models are connected. Results obtained in simulation do not, by themselves, establish that a recommendation is safe to apply to the real ETA."
+  }
+}

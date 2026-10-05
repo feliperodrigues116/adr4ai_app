@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS03-US03",
+  "pattern_id": "003",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_06da5f90807f7d6c006ac309e3fa0087d181c4d0a15ba7ed58",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "dd87d06129bee3f9293fa5d03a54d3a77ea6ea1bd3ebfb119f416d8082c54b7a",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Commercial System as Server for Service Closure",
+    "context": "When the AI system confirms that a submitted document does not belong to the customer, it must mark the service as improcedente and record the reason in the company's Commercial system. The Commercial system must then notify the customer. The architecture needs to define how the AI system requests this update while leaving notification with the Commercial system.",
+    "decision": "We will make the AI system a client of the Commercial system, which will serve requests to update services. When the AI system confirms that a document does not belong to the customer, it will request that the Commercial system mark the service as improcedente and record the reason. The Commercial system will notify the customer when the service is closed.",
+    "status": "Proposed",
+    "consequences": "Service closure and its reason will be recorded in the Commercial system, which remains responsible for notifying the customer. This centralizes control of the service record but makes completion of the update dependent on the Commercial system being available and maintained."
+  }
+}

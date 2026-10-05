@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS01-US02",
+  "pattern_id": "003",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_0f5291255a3f60ae006ac3091c9aa887d1a9f33bf202d2785b",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "672fdd9ffe4c807fc1edbe9e184368fc403b9325cf6bed7e4516065697ddc01d",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Integração cliente-servidor para registro de chamados",
+    "context": "O atendimento de primeiro nível de TI abrange solicitações como bloqueio de sites e instalação de softwares. O sistema deve responder a procedimentos e dúvidas sobre o portfólio de serviços de TI e documentar as solicitações por meio de integração com o sistema de chamados. Essa integração exige definir qual sistema solicita o registro e qual presta esse serviço.",
+    "decision": "Vamos estabelecer uma relação cliente-servidor para o registro de chamados. O sistema de suporte atuará como cliente e iniciará solicitações ao sistema de chamados, que atuará como servidor e prestará o serviço de registro para documentar as solicitações dos usuários.",
+    "status": "Proposed",
+    "consequences": "O registro dos chamados ficará centralizado no sistema de chamados. Em contrapartida, a documentação das solicitações dependerá da disponibilidade desse sistema, e a operação do serviço de registro exigirá gestão. Essa integração não define como o sistema responderá às dúvidas e aos procedimentos do portfólio de TI."
+  }
+}

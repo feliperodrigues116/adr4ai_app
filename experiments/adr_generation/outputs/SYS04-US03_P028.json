@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS04-US03",
+  "pattern_id": "028",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_096b4f9c45dbdb0f006ac30d0a93d087d1a83a7d6b24d49309",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "6f7bca644a7e855f39ba521d707458515493f5faddbfb5d20c2e0fec889b0f70",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "End-to-End Model Evaluation in the Digital Twin",
+    "context": "Data scientists and control engineers need to evaluate control and AI model recommendations in the digital twin before applying them to the real ETA. The models must receive the variables expected in the real environment, while their commands or recommendations affect only the simulation. Each execution must be recorded, and different models must be comparable under the same scenario.",
+    "decision": "We will evaluate connected models through end-to-end test runs in the digital twin. Each run will supply the expected variables, apply model commands or recommendations only in the simulated environment, and record inputs, outputs, and results. We will use assertions about the observed behavior and run different models against the same scenario for comparison.",
+    "status": "Proposed",
+    "consequences": "The test runs will make model behavior observable and comparable before recommendations are considered for the real ETA. Keeping the assertions and test scenarios relevant as models and use cases change will require ongoing effort. Passing a simulated test will show how a model behaved in that scenario, not guarantee its behavior in the real ETA."
+  }
+}

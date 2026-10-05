@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS02-US03",
+  "pattern_id": "002",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_009b9c62116bb6d5006ac309a145b487d18d3c92375a15278b",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "ffa6c44dece4cbf9e11c9cc9e5ff43043d3529eb568972e8f563854f08a6546c",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Staged Processing for Saving the Complete Document",
+    "context": "When a user saves a document, the system must compile all its parts, correct any grammatical errors in the saved version, and inform the user which words were corrected. These distinct tasks must produce a consistent saved document and correction report.",
+    "decision": "We will process the document through sequential stages that compile its parts, correct grammatical errors while retaining which words changed, and then save the corrected document and report the corrected words to the user.",
+    "status": "Proposed",
+    "consequences": "Separating the tasks makes individual stages easier to modify than a single combined operation. The stages must remain in order, and correction information must be carried forward so the reported words correspond to the saved version."
+  }
+}

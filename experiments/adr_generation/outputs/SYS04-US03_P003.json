@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS04-US03",
+  "pattern_id": "003",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_091063d49f6842bd006ac30cec3c3087d1babd35daa417b365",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "7cb4f7efe498912a9ef1bd9544bf77d89c411ff6b1774cc724af38399bd8dab7",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Digital Twin as a Simulation Server",
+    "context": "Control and AI models need to connect to the digital twin to evaluate their recommendations before application at the real water treatment plant. Each model needs the variables expected in the real environment, while its commands or recommendations must affect only the simulation. Evaluations must record inputs, outputs, and results and allow different models to be compared under the same scenario.",
+    "decision": "We will make the digital twin the server for model evaluations, with connected models acting as clients that request the expected variables and submit commands or recommendations for simulation. The server will apply those commands or recommendations only in the simulated environment, record the inputs, outputs, and results of each execution, and provide the same scenario for comparisons between models.",
+    "status": "Proposed",
+    "consequences": "Centralizing simulation data and execution gives connected models a consistent basis for comparison and keeps their evaluations separate from the real plant. It also places responsibility for serving models, running evaluations, and maintaining execution records on the digital twin server, which will require management resources."
+  }
+}

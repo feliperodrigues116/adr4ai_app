@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS02-US02",
+  "pattern_id": "070",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_0b29ee4d31e868d0006ac30994bb7087d199865f8d6fdc04ee",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "4360f5d6cce74362071c04b87372b2eaa027e0dc9d077d52ebfd5d15a4fbdb8d",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Conditional Model Selection for Document Text Improvement",
+    "context": "Users need to improve text in standardized procurement documents by correcting errors and aligning it with technical-legal norms. The system must preserve the artifact’s context and purpose while supporting three different requested outcomes: rephrasing, summarizing, and expanding content. The expected result therefore varies with the user’s requested operation.",
+    "decision": "We will make multiple text-improvement models available and establish rules that select a model according to whether the user requests rephrasing, summarization, or expansion. The selected model will process the text in its document context, with the goal of correcting errors and meeting the applicable technical-legal norm without changing the artifact’s context or purpose.",
+    "status": "Proposed",
+    "consequences": "Selection by requested operation allows the system to direct each text-improvement task to an appropriate model. Operating multiple models increases cost, and the selection rules must be maintained. Model selection alone does not guarantee that an edited text preserves the artifact’s context and purpose."
+  }
+}

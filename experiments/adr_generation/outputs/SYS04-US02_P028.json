@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS04-US02",
+  "pattern_id": "028",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_08b1a0e7a4144618006ac309fd98dc87d1ad8271b8468c3ba1",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "cab55b07d7ac14c9f5c99d01a3396d7c43807c59dcf02dc57ccaf6433bf7eded",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "End-to-End Simulator Integration Tests",
+    "context": "Automation developers need to test the simulator’s integration with the PLC, supervisory system, and external applications. This requires checking that simulated variables are available through OPC UA with the ETA-defined tag names and data types, that permitted commands affect the simulation, and that communication loss and restoration can be tested.",
+    "decision": "We will establish end-to-end tests of the simulator’s integration interfaces. These tests will verify the OPC UA variables and their tag names and data types, exercise permitted commands and observe their effects in the simulation, and cover communication loss and restoration.",
+    "status": "Proposed",
+    "consequences": "The tests will provide a way to detect integration discrepancies across the behaviors developers need to evaluate. They will also require ongoing maintenance as the defined tags, commands, or integration behavior change."
+  }
+}

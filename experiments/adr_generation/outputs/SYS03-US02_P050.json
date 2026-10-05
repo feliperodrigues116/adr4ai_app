@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS03-US02",
+  "pattern_id": "050",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_001d501872bde7ad006ac309dae06087d1b2e7611d24712882",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "f843f230af80601f6f3889940b1d58bc7fc4bb4b39e09b74c9145bdf8e83247e",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Synchronous Document Validation Before Status Change",
+    "context": "The AI system must confirm that a document belongs to the customer before changing the service request status. The Commercial system’s customer notification and service scheduling depend on that status change, so the workflow must not advance before validation is complete.",
+    "decision": "We will hold the service request workflow until the AI system completes document validation. When validation confirms that the document belongs to the customer, the AI system will communicate with the Commercial system to change the status to PENDENTE DE EXECUÇÃO, allowing the Commercial system to notify the customer and proceed with scheduling.",
+    "status": "Proposed",
+    "consequences": "The workflow will preserve the required order between validation, status change, notification, and scheduling. This sequence is straightforward to follow, but validation latency can delay the status change and all subsequent steps."
+  }
+}

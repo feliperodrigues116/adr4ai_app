@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS02-US02",
+  "pattern_id": "064",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_04b0573e16383ecc006ac3098ae04c87d1b7f6b8dc65566a73",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "428624631efb1c649f38113d631bd83236d13e222db5680f14257ea69b0a7d4c",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "On-Demand Iterative Text Enrichment",
+    "context": "Users need to improve text in previously standardized document types by correcting errors and aligning it with technical-legal standards. They must also be able to request context-aware reformulations, summaries, and expansions without changing the context or purpose of the resulting artifact. A fixed, one-way editing process would not accommodate these successive requests.",
+    "decision": "We will structure text improvement as an automated, user-initiated, iterative enrichment cycle. For each request, the system will transform the supplied text according to the requested improvement and allow further reformulation, summarization, or expansion, while preserving the text’s context and the artifact’s purpose across supported document types.",
+    "status": "Proposed",
+    "consequences": "Users can request improvements as needed and refine the result through successive transformations rather than relying on a single editing pass. Repeated transformations may make it harder to preserve the original context and purpose, particularly across different document types; each iteration must remain aligned with those requirements."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS01-US01",
+  "pattern_id": "060",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_0b8cb5d42c8b1484006ac30914caa087d1ba2cced442b20d52",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "8b3230009fcf216f4afc7135a6157d61f6687c031c50f9af399ef65aa15bfc65",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Document-Grounded Response Control",
+    "context": "Store attendants need answers about how to handle customer requests. The system must answer in accordance with official company documents and must say that it cannot help when no document contains guidance for the procedure. The architecture therefore needs to control when it provides procedural guidance.",
+    "decision": "We will apply a rule-based control to procedural responses. We will provide guidance only when an official company document contains guidance for the procedure, and we will keep the response consistent with that document. When no document contains such guidance, we will withhold procedural guidance and tell the attendant that the system cannot help.",
+    "status": "Proposed",
+    "consequences": "This control reduces the risk of giving attendants procedural advice unsupported by official documents. Its effectiveness depends on correctly determining whether the documents contain applicable guidance. The control cannot account for every case, and additional rules may increase operational complexity."
+  }
+}

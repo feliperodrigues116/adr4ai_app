@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS01-US03",
+  "pattern_id": "013",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_0821a148fba5d983006ac30930c9d487d1ae156dc173361a0e",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "368a4e99a9402d560c3495e151fe31fbfa7ee507f3be188e39b4556751c1215b",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Adaptive Presentation of Answer Sources",
+    "context": "Users need to see every source used in a requested answer, including the document, version, and section of each retrieved passage. The system must report only information in the company catalog. The presentation of answers therefore needs to remain aligned with their source information.",
+    "decision": "We will establish a frontend AI that adapts the presentation of answers to show every source used and its document, version, and section. A backend AI will provide answers limited to the company catalog and the associated source information. An AI orchestrator will monitor both AI capabilities and oversee how their interaction evolves so that the presentation remains aligned with the answers and their sources.",
+    "status": "Proposed",
+    "consequences": "Users will be able to see the catalog sources behind answers, making their origins easier to understand. The frontend and backend will need to keep answer content and source details aligned. The additional frontend AI and orchestrator will also introduce monitoring and coordination responsibilities."
+  }
+}

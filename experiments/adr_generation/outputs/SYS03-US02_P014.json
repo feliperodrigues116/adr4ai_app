@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS03-US02",
+  "pattern_id": "014",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_083d173a756371ce006ac309c98f7087d1bada871be3d90131",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "f4e2a92533d2f68f890fd62624824499c67781e61e7b42d06f93f5f75e22ed2f",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Separate Document Validation from the Commercial Workflow",
+    "context": "When the AI system confirms that a document belongs to the customer, it must change the service status in the Commercial system to PENDENTE DE EXECUÇÃO. That status change enables the Commercial system to notify the customer and proceed with scheduling. The architecture needs to distinguish the AI validation responsibility from these subsequent business activities.",
+    "decision": "We will separate AI-based document validation from the Commercial system’s business workflow through a clear interface. After confirming that the document belongs to the customer, the AI system will communicate with the Commercial system to change the service status to PENDENTE DE EXECUÇÃO. The Commercial system will then handle customer notification and scheduling based on that status change.",
+    "status": "Proposed",
+    "consequences": "The separation will allow AI validation to be adjusted without coupling it to customer notification or scheduling. The Commercial system will retain responsibility for those business activities. The workflow will depend on the confirmed validation being communicated and the status change succeeding, so the interface between the systems will need to be maintained."
+  }
+}

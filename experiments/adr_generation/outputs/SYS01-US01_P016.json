@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS01-US01",
+  "pattern_id": "016",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_0a440b47ee13293a006ac3090e840c87d1969d734c4f39f3dc",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "88a9145697ca6c6e595ea2d631970c388aee4e14d56553275e0c0dd7a1ddb7b9",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Rejection of Unsupported Procedural Answers",
+    "context": "Store attendants need guidance on how to handle customer requests. The system must answer according to the company’s official documents and inform the attendant when no document contains guidance for the requested procedure. The architecture must therefore account for requests that lack a documented answer.",
+    "decision": "We will reject a proposed procedural answer when the company’s official documents do not support it. If no document contains guidance for the requested procedure, we will tell the attendant that the system cannot help rather than provide an unsupported answer.",
+    "status": "Proposed",
+    "consequences": "Attendants will not receive procedural guidance that lacks support in the official documents. Requests without documented guidance will remain unanswered, so the system’s ability to help depends on the guidance those documents contain."
+  }
+}

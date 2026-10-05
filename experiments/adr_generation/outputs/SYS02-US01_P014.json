@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS02-US01",
+  "pattern_id": "014",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_05f7cb93846bab97006ac30956fa4087d19a0a480f99677801",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "1120ffc55b37a0e351d325382d9486680975e373c46feb39f5dcd3fa68e264a9",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Separação entre composição documental e geração por IA",
+    "context": "O documento inicial deve corresponder ao registro cadastrado no sistema de licitações, usar o layout apropriado ao tipo de documento e seguir o layout cadastrado pelo administrador. O conteúdo das variáveis será gerado pelo modelo de IA em linguagem técnico-jurídica, enquanto a substituição das variáveis e a composição do texto devem preservar a legibilidade e a harmonia do documento. Essas responsabilidades precisam permanecer distinguíveis.",
+    "decision": "We will separate the business logic that selects the registered layout, replaces variables, and composes the document from the AI model that generates the content for those variables. We will define a clear interface through which the generated content is provided for insertion into the appropriate layout, while preserving the required technical-legal language and a readable, harmonious result.",
+    "status": "Proposed",
+    "consequences": "The layout and composition rules can be maintained separately from adjustments to AI-generated content. This separation makes it clearer which responsibility to address when the document does not meet its requirements. It also requires maintaining the interface between the two responsibilities; separating them does not, by itself, ensure that generated text follows the required language standard or fits harmoniously into the layout."
+  }
+}

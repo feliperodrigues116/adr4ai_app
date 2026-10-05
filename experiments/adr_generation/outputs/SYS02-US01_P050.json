@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS02-US01",
+  "pattern_id": "050",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_02f7931a32030afa006ac30968d55887d1be1d0e8c6784914e",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "43f6855c24c6c8d1e1f0507bfd6637222da08ec266005042906c6f8bba9039a3",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Synchronous Assembly of Initial Documents",
+    "context": "The system must generate an initial procurement document using the administrator-registered layout appropriate to its document type. It must replace layout variables with AI-generated content and combine the text in a readable, harmonious form using technical-legal language. Variable substitution and document assembly depend on the model completing its generation.",
+    "decision": "We will make the document-generation workflow wait for the AI model to finish generating variable content before replacing variables and combining that content with the appropriate registered layout. The workflow will not assemble the initial document until the generated content is available.",
+    "status": "Proposed",
+    "consequences": "This keeps the sequence of generation and assembly straightforward and makes the workflow easier to trace and monitor. Model latency will delay completion of the document and may affect the user's experience."
+  }
+}

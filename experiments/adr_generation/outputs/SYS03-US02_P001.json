@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS03-US02",
+  "pattern_id": "001",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_07933107bfec018d006ac309b9f66487d1a3f51312ce9478f9",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "4b9ed36b00f4a81a827c3737fc75893b4c5faa954e3f244937bdb01f6dc2cd07",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Salvaguardas por regras para a alteração do status do atendimento",
+    "context": "A confirmação pela IA de que o documento pertence ao cliente desencadeia a alteração do status do atendimento para PENDENTE DE EXECUÇÃO. Essa alteração leva o sistema Comercial a comunicar o cliente e a seguir com a programação do atendimento. Como uma confirmação incorreta pode liberar essas etapas indevidamente, a arquitetura precisa controlar quando o resultado da IA pode produzir a mudança de status.",
+    "decision": "We will submeter o resultado da confirmação de titularidade feita pela IA a uma decisão determinística baseada em regras antes de solicitar ao sistema Comercial a alteração do status para PENDENTE DE EXECUÇÃO. Somente um resultado autorizado por essas regras poderá desencadear a mudança de status; um resultado não autorizado não a desencadeará.",
+    "status": "Proposed",
+    "consequences": "A decisão reduz o risco de que uma confirmação incorreta da IA provoque a comunicação ao cliente e a programação do atendimento. A comunicação e a programação permanecem vinculadas à mudança de status no sistema Comercial. Em contrapartida, a verificação por regras acrescenta complexidade à arquitetura e não elimina a possibilidade de erros na confirmação."
+  }
+}

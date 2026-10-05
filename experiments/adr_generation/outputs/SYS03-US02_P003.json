@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS03-US02",
+  "pattern_id": "003",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_03c895af66e108b6006ac309c24f5087d1b055864a4ad227a7",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "866e7fee5a241e43fcbfc9662c6af41a15be4fc8a16d8ad0983d1a394a664d58",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Commercial System as Service Provider for Status Updates",
+    "context": "After confirming that a document belongs to the customer, the AI system must change the service request status to PENDENTE DE EXECUÇÃO. That change must allow the Commercial system to notify the customer and continue scheduling the service. The architecture must define how the AI system requests the change while the Commercial system maintains the service request.",
+    "decision": "We will have the AI system act as a client that requests a status change from the Commercial system. After confirming that the document belongs to the customer, the AI system will request that the Commercial system set the service request status to PENDENTE DE EXECUÇÃO. The Commercial system will perform the change, notify the customer, and continue scheduling the service.",
+    "status": "Proposed",
+    "consequences": "Service request status and the actions that follow its change remain centrally controlled by the Commercial system. The AI system depends on that system to complete the status change, and maintaining this central service carries an operational cost."
+  }
+}

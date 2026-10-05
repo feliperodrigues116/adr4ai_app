@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS03-US01",
+  "pattern_id": "001",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_055adfe3ae691836006ac309b28d1087d18f9ceadd54cb7858",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "955b2c9334c957934d16073b77ba8326e01c5b2bd61ccd4c91a97e787296e7fd",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Rule-Governed Document and Selfie Verification",
+    "context": "The AI system must receive all images submitted by the customer and verify whether the document photo belongs to the customer who submitted the selfie. An incorrect AI assessment could undermine this identity check. Because AI predictions cannot be guaranteed correct, the architecture must account for that uncertainty when determining the verification outcome.",
+    "decision": "We will place deterministic, rule-based safeguards between the AI assessment of the document photo and selfie and the verification outcome. The safeguards will determine how to handle the assessment result, so the AI prediction alone will not decide whether the document photo belongs to the customer.",
+    "status": "Proposed",
+    "consequences": "The safeguards will reduce the risk that an incorrect AI prediction directly produces an incorrect identity-verification outcome, but they will not guarantee correctness. They will also make the verification architecture more complex."
+  }
+}

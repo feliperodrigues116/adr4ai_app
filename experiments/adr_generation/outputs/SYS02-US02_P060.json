@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS02-US02",
+  "pattern_id": "060",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_07c7252b6f67b038006ac30982384487d19d62ca02c43d5980",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "d63b10532fdc11b50a267a15a226c37cbf55dff9cc2f8a9e0871e4f97846d29f",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Parameter-Controlled Document Transformation",
+    "context": "Users need to correct and adapt text to technical-legal norms across different types of previously standardized documents. They must be able to reformulate, summarize, or expand content while preserving the context and purpose of the resulting artifact. These transformation choices require control over the generated text, and an otherwise useful revision may be unacceptable if it changes the artifact’s meaning.",
+    "decision": "We will parameterize text transformation according to the user’s selected action—reformulate, summarize, or expand—and the document’s context and purpose. We will apply rule-based controls to the generated text and stop or retry a transformation when those controls identify a departure from that context or purpose.",
+    "status": "Proposed",
+    "consequences": "Users can request different transformations while the system limits revisions that its rules identify as inconsistent with the artifact’s context or purpose. The controls cannot detect every problematic change, so they do not guarantee preservation in every case. Adding and maintaining rules will also increase operational complexity."
+  }
+}

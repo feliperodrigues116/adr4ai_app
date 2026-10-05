@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS02-US02",
+  "pattern_id": "002",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_0f2a2b3d78f277d9006ac30979c26887d1ab3c7198dcba76ea",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "3f2b9c0e5e94a17da5bcee4666c3ea1d1fe00b89e4a4772fbaaf3e53192d62d7",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Context-Preserving Document Text Processing Pipeline",
+    "context": "Users need to improve text in standardized procurement documents by correcting errors and aligning wording with technical-legal norms. They also need to reformulate, summarize, or expand content without changing the context or purpose of the resulting artifact. These varied text-processing tasks need to work together across different standardized document types.",
+    "decision": "We will process document text through a sequence of separable transformation stages. The stages will perform correction, technical-legal adjustment, and the user-requested reformulation, summarization, or expansion as appropriate. Each stage will pass its result to the next while preserving the text’s context and the artifact’s purpose.",
+    "status": "Proposed",
+    "consequences": "Separating the transformations will make it easier to modify or add text-processing steps than in a single, combined process. However, the stages will need to work together so that successive changes do not alter the document’s context or purpose."
+  }
+}

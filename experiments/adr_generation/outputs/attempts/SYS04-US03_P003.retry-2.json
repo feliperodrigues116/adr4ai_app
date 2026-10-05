@@ -1,0 +1,8 @@
+{
+  "user_story_id": "SYS04-US03",
+  "pattern_id": "003",
+  "state": "started",
+  "automatic_retry": false,
+  "manual_retry_authorized": true,
+  "prior_attempt": "SYS04-US03_P003.json"
+}

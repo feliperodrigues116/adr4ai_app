@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS03-US02",
+  "pattern_id": "044",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_0c9b2c23953fcd41006ac309d2f18887d1a48554d3e90f33db",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "b5e94f986d2ea0521735c24e38888439b62feb3306886c170679d1ed28a12d4f",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "State-Driven Service Request Progression",
+    "context": "When the AI system confirms that a document belongs to the customer, it must change the service request’s status in the company’s Commercial system to PENDENTE DE EXECUÇÃO. That change must lead the Commercial system to notify the customer and proceed with scheduling the service. The architecture needs to associate those actions with the request’s status.",
+    "decision": "We will make the Commercial system’s handling of a service request depend on its state. After confirming that the document belongs to the customer, the AI system will communicate with the Commercial system to change the request’s status to PENDENTE DE EXECUÇÃO. In that state, the Commercial system will notify the customer and proceed with scheduling the service.",
+    "status": "Proposed",
+    "consequences": "Customer notification and scheduling will follow the confirmed status change rather than occur independently of it. These actions will depend on the AI system successfully communicating the change and on the Commercial system maintaining the behavior associated with PENDENTE DE EXECUÇÃO."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS01-US01",
+  "pattern_id": "001",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_08587682ec64f283006ac304cbcd8887d29493de9450781994",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "c7c79c3c28f660ef344de84893bc1c569075ddf82746e858466315c82b1eed1f",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Document-Grounded Response Safeguards",
+    "context": "Store attendants need procedural guidance for handling customer requests. The system must answer according to the company's official documents and state that it cannot help when no document contains guidance for the procedure. AI-produced responses may not always satisfy these conditions, so the architecture must prevent unsupported guidance from reaching attendants.",
+    "decision": "We will place a deterministic, rule-based safeguard between AI-produced guidance and its delivery to store attendants. The safeguard will allow a response only when it is consistent with guidance in the company's official documents. If no official document contains guidance for the requested procedure, the system will tell the attendant that it cannot help.",
+    "status": "Proposed",
+    "consequences": "This will reduce the risk of attendants receiving unsupported procedural guidance, though it cannot guarantee that every permitted answer is correct. The safeguard adds architectural complexity and may prevent a response from being delivered when the AI-produced guidance does not meet its rules."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS02-US01",
+  "pattern_id": "002",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_0c617baea381d6ee006ac309444eac87d1877053c9886148bc",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "e77dd72aaf674921e07396fb374c1866f00a313d46b9ef6d9d759deff259c902",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Staged Generation of Procurement Documents",
+    "context": "The system must generate an initial document based on a record in the procurement system. It must use the administrator-registered layout appropriate to the document type, replace layout variables with AI-generated content, and produce readable, harmonious text in technical-legal language. These requirements involve distinct transformations that must work together in the final document.",
+    "decision": "We will generate the document through a sequence of processing stages. The stages will select the appropriate registered layout, replace its variables with AI-generated content, and combine the layout and variable text into a readable, harmonious document in technical-legal language. Each stage will pass its result to the next.",
+    "status": "Proposed",
+    "consequences": "Separating the transformations will make it easier to adjust one stage without changing the entire generation flow. The stages will also need to remain coordinated: a change to an intermediate result can affect the readability, formatting, or language of the final document."
+  }
+}

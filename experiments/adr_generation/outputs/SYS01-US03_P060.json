@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS01-US03",
+  "pattern_id": "060",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_03253484774e95cd006ac3093bb99087d18a4696477ff97706",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "8ecab6acb4cbd46dc01feeb5add49bc3dcafce0d4be318c438b1402f3543dec3",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Rule-Based Controls for Catalog Answers",
+    "context": "Users need to see all sources used in an answer, including the document, version, and section of each retrieved excerpt. Answers must report only information in the company catalog. The architecture therefore needs to control what information appears in answers while preserving the required source details.",
+    "decision": "We will apply rule-based controls to answers so that they report only content from the company catalog. For every retrieved excerpt used in an answer, we will show its document, version, and section; content that does not meet these conditions will not be reported.",
+    "status": "Proposed",
+    "consequences": "Answers will be limited to catalog content, and users will be able to identify the sources used. Content without the required source details may have to be excluded. The controls cannot cover every possible erroneous answer, and maintaining more rules may increase operational complexity."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS02-US03",
+  "pattern_id": "045",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_0e21d0a010258fde006ac309a9116087d1a29940cb50400dc3",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "fcfe07670e21779df5325d7076097b9e36d9e89ffcab486a0972961ce598fa37",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Separate Document Assembly from the Saved Document",
+    "context": "The user needs to save a complete bidding document assembled from all its parts. The saved version must have grammatical errors corrected, and the user must be told which words were corrected. These requirements call for a way to construct the complete document while keeping the reported corrections consistent with the saved version.",
+    "decision": "We will separate construction of the complete document from its saved representation. The construction process will compile all document parts, produce the grammatically corrected version for saving, and identify the corrected words to report to the user.",
+    "status": "Proposed",
+    "consequences": "The saved document will contain all compiled parts and the grammatical corrections, with the corrected words available to report to the user. Separating construction from the saved representation introduces an assembly step and requires the reported corrections to remain consistent with the version that is saved."
+  }
+}

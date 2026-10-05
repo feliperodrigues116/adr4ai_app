@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS03-US03",
+  "pattern_id": "050",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_0c9771021028a833006ac309ed388c87d1bcc9a8f6bde6ac33",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "111160286bfa6a38154ba5aca2b1b0f90b2335ae37b105530465293dd1a52081",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Synchronous Document Verification Before Service Closure",
+    "context": "The AI system processes documents submitted through integrated service-request applications. It must mark a service as improcedente in the company's Commercial system, with a reason, when it confirms that the document does not belong to the customer. The Commercial system then notifies the customer. The service update therefore depends on the outcome of the document check.",
+    "decision": "We will wait for the AI document check to finish before proceeding with the service update. If the check confirms that the document does not belong to the customer, we will mark the service as improcedente in the Commercial system and record the reason, allowing the Commercial system to notify the customer after the service is closed.",
+    "status": "Proposed",
+    "consequences": "The service workflow will have a clear sequence: document check, conditional service closure, then notification. This makes the workflow simpler to follow and trace. The wait for the AI result may delay service closure and the subsequent notification if the check takes a long time."
+  }
+}

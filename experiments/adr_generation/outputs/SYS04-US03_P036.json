@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS04-US03",
+  "pattern_id": "036",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_0d50c4ba02dbb57a006ac30d14ba3487d1b2403c71852b26ac",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "b36b54c4e00d012c9f7d75b46b0416915d8153715cc6c2d924348457278ca9bb",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Repeatable Scenario Testing for Control and AI Models",
+    "context": "Data scientists and control engineers need to evaluate model recommendations in the digital twin before applying them to the real water treatment plant. Models must receive the variables expected in the real environment, while their commands and recommendations affect only the simulation. Each execution must be recorded, and different models must be comparable under the same scenario.",
+    "decision": "We will establish batch testing for the digital twin that replays the same simulated scenario for different control and AI models. Each execution will provide the model with the variables expected in the real environment, apply its commands or recommendations only to the simulation, and record its inputs, outputs, and results.",
+    "status": "Proposed",
+    "consequences": "Repeated scenarios will support comparisons between models before their recommendations are applied to the real plant. Model commands and recommendations made during testing will remain confined to the simulation. The testing capability will require maintaining comparable scenarios and records for each execution; its results will describe performance in simulation, not establish performance in the real plant."
+  }
+}

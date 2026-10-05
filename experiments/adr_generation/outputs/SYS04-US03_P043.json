@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS04-US03",
+  "pattern_id": "043",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_01544ef583a71c17006ac30d1ece0c87d1846a2d45ab33f746",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "ed274c72ae539670da3699a08bf88708b448e06b644157a193d546e89f39563f",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Interchangeable Models for Digital-Twin Evaluation",
+    "context": "Data scientists and control engineers need to connect different control and AI models to the digital twin and compare their recommendations before applying them to the real ETA. Each model must receive the variables expected in the real environment, while its commands or recommendations must affect only the simulation. Each execution must also be recorded, and models must be comparable using the same scenario.",
+    "decision": "We will define a common interface for control and AI models that the digital twin uses to invoke interchangeable models. The twin will provide each model with the required variables for a scenario, apply its commands or recommendations only to the simulated environment, and record the inputs, outputs, and results of each execution. This structure will allow different models to be evaluated against the same scenario.",
+    "status": "Proposed",
+    "consequences": "Models can be changed and compared without changing how the digital twin invokes them. Their recommendations can be evaluated without affecting the real ETA, and recorded executions will support comparison. Each model must conform to the common interface, which increases code complexity."
+  }
+}

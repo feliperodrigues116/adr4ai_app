@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS04-US02",
+  "pattern_id": "003",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_09e59ec9d7de652f006ac309f43e4887d1bb3ac32f0e36bab8",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "54e68220ac4e5bd909fdcfe627750ac9e3371cfd394270f2c902c30c100e7503",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Interface Cliente-Servidor para Integração do Simulador",
+    "context": "O desenvolvedor de automação precisa testar a integração do simulador com CLP, supervisório e aplicações externas. Para isso, essas aplicações precisam acessar variáveis simuladas por OPC UA, com a nomenclatura e os tipos de dados definidos para a ETA, e enviar comandos permitidos cujos efeitos apareçam na simulação. Também deve ser possível testar a perda e o restabelecimento da comunicação.",
+    "decision": "We will establish the simulator as the server for these integration services, with the CLP, supervisory system, and external applications initiating connections as clients. O simulador disponibilizará as variáveis simuladas por OPC UA conforme a nomenclatura e os tipos de dados definidos para a ETA, receberá comandos permitidos e refletirá seus efeitos na simulação. As conexões com os clientes permitirão testar a perda e o restabelecimento da comunicação.",
+    "status": "Proposed",
+    "consequences": "A disponibilização das variáveis e o recebimento de comandos ficarão concentrados no simulador, oferecendo aos clientes uma interface comum para os testes de integração. Essa concentração também torna a comunicação dos clientes dependente da disponibilidade do servidor e exige esforço para mantê-lo e gerenciá-lo. A perda dessa comunicação interromperá as trocas com os clientes até seu restabelecimento, comportamento que poderá ser testado."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS01-US03",
+  "pattern_id": "001",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_01522c82dab78ae8006ac30926ec1087d1a9e1a0f374eccc2b",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "970d1dd2828a9f1f4c6fad9d6b9de9e5abe78d43096041d68226789ebfdc9c36",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Rule-Based Safeguards for Catalog-Grounded Answers",
+    "context": "The multi-area support system must show all sources used in an answer, identifying the document, version, and section of each retrieved passage. Answers must contain only information from the company catalog. Because AI-generated content may not reliably meet these conditions, the architecture needs a way to check answers before presenting them.",
+    "decision": "We will place deterministic, rule-based checks between answer generation and presentation. These checks will allow only content supported by retrieved passages from the company catalog and will require the answer to show every source used, with its document, version, and section. The system will withhold content that does not meet these checks.",
+    "status": "Proposed",
+    "consequences": "Presented answers will be more traceable to the company catalog, reducing the risk of unsupported information. The checks will add architectural complexity and may prevent some content from being shown when catalog support or the required source details cannot be established."
+  }
+}

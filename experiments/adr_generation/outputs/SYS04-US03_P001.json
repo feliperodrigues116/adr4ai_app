@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS04-US03",
+  "pattern_id": "001",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_05150349bc8cf93d006ac30a06accc87d18b8c67b9db68f382",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "5b5a5b34f15e61533fbae0638cebe743696949dac9d43066208e38bd363cea38",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Rule-Based Safeguards for Model Evaluation",
+    "context": "Data scientists and control engineers need to evaluate control and AI model recommendations in the digital twin before applying them to the real ETA. Models must receive the variables expected in the real environment, but their commands and recommendations may be applied only in simulation. Each execution must be recorded, and different models must be comparable under the same scenario. Because model outputs cannot be assumed to be correct, the architecture needs to preserve the boundary between evaluation and real operation.",
+    "decision": "We will place a deterministic, rule-based safeguard between connected models and the application of their commands or recommendations. The safeguard will permit those outputs to affect only the simulated environment and prevent their application to the real ETA. Guarded evaluations will provide models with the variables expected in the real environment and record each execution's inputs, outputs, and results so that different models can be compared under the same scenario.",
+    "status": "Proposed",
+    "consequences": "Model outputs can be evaluated without directly affecting the real ETA, reducing the risk from incorrect recommendations. Recorded executions and shared scenarios support model comparison. The safeguard adds architectural complexity, and its rules must remain consistent with the simulation-only boundary."
+  }
+}

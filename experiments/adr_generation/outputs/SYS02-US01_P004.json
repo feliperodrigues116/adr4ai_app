@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS02-US01",
+  "pattern_id": "004",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_0df43f4204060c0c006ac3094c68a887d1a90ee083772e3e53",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "47adc7cdec003cb2b59e20137da0ed9934956a51d04afc113bebb1f1f6c1c02f",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Separate Document Content from Layout and Generation Control",
+    "context": "The system must generate an initial procurement document from a registered record. It must use the administrator-registered layout appropriate to the document type, replace layout variables with AI-generated content, and produce readable, coherent text in technical-legal language. These requirements distinguish the document content from its representation and from the handling of the generation request.",
+    "decision": "We will separate document generation into a model that holds the registered record and generated variable content, a view that represents the document using the appropriate registered layout, and a controller that coordinates the generation request and resulting document. The view will combine the layout text with substituted variable content to produce a readable, coherent document in the required technical-legal style.",
+    "status": "Proposed",
+    "consequences": "Separating content from its representation will make it easier to reuse generation behavior across document types and their layouts. It will also require the model, view, and controller to remain coordinated as layouts and document types change. The completed text must still be checked for readability, coherence, and technical-legal language; the separation alone does not ensure those qualities."
+  }
+}

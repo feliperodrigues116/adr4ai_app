@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS02-US01",
+  "pattern_id": "045",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_05de61ebedafeb6c006ac30960142487d19f132c25a22b0bf9",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "7c00ddc962355e5d385fbae06c3bcdc4b79cf3c5da4ed5f32ba983a5fdc0d978",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Separate Document Construction from Layout Representation",
+    "context": "The system must generate an initial bidding document based on a registered record. It must use the administrator-registered layout appropriate to the document type, replace layout variables with AI-generated content, and produce readable, harmonious text in technical-legal language. This requires the document’s content and layout to be brought together without treating them as the same concern.",
+    "decision": "We will separate construction of the initial document from its layout representation. The registered layout selected for the document type will define the representation, while document construction will replace its variables with AI-generated content and combine that content with the layout text into a readable, harmonious document in technical-legal language.",
+    "status": "Proposed",
+    "consequences": "Layouts can vary by document type without being conflated with the AI-generated content used to fill them. Document construction must still account for the variables in each selected layout and ensure that the combined text remains coherent and follows the required language standard; separating construction from representation does not guarantee those qualities on its own."
+  }
+}

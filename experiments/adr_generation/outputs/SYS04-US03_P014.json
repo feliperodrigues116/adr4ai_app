@@ -1,0 +1,22 @@
+{
+  "user_story_id": "SYS04-US03",
+  "pattern_id": "014",
+  "model": "gpt-6-sol",
+  "reasoning_effort": "high",
+  "response_id": "resp_05f53a4912dc9003006ac30cf668cc87d1986e9d538e8006a7",
+  "api_calls": 1,
+  "source_file": "research_results/pattern_selection_results.csv",
+  "source_sha256": "e73066488063763a57fb2c53d907ccf8549e14353764bf5ee2d6c3382e6a85ad",
+  "prompt_sha256": "2a784e3dde043f05844b73abd68ad0333e5f884b4e857ed519078c47a10ef913",
+  "structured_outputs": {
+    "strict": true,
+    "validation_succeeded": true
+  },
+  "adr": {
+    "title": "Separate Models from Digital Twin Simulation and Evaluation",
+    "context": "Data scientists and control engineers need to connect control and AI models to the digital twin to assess their recommendations before applying them in the real ETA. Models must receive the variables planned for the real environment, while their commands or recommendations must affect only the simulation. Each execution must be recorded, and different models must be comparable under the same scenario. These needs call for a clear boundary between model behavior and the twin’s simulation and evaluation functions.",
+    "decision": "We will separate simulation, connected models, and execution evaluation into three layers with explicit interfaces between the models and the other functions. The simulation layer will supply the required variables and apply model commands or recommendations only in the simulated environment. The evaluation layer will record each execution’s inputs, outputs, and results and support comparison of different models using the same scenario. Data will flow separately from the simulation to the models as inputs, from the models to the simulation as commands or recommendations, and from executions to evaluation as recorded results.",
+    "status": "Proposed",
+    "consequences": "Models can be changed and compared without combining their behavior with the twin’s simulation and evaluation responsibilities. Recorded executions will make their recommendations and results available for assessment before use in the real ETA. The separation also requires maintaining the interfaces and coordinating the three data flows so that models receive consistent variables and comparisons use the same scenario."
+  }
+}
