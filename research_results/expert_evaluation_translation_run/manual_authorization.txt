@@ -1,0 +1,318 @@
+The manual review is complete.
+
+I explicitly APPROVE the following local linguistic corrections to the Portuguese expert-evaluation presentation layer:
+
+1. For `SYS03-US02 × 014`:
+   Replace every identified residual occurrence of:
+
+   `Commercial`
+
+   with:
+
+   `Comercial`
+
+   Apply this only to the four previously identified translated fields:
+   - adr_title
+   - adr_context
+   - adr_decision
+   - adr_consequences
+
+2. For `SYS04-US03 × 014`:
+   In the previously identified translated `pattern_motivation` field, replace:
+
+   `Machine Learning`
+
+   with:
+
+   `aprendizado de máquina`
+
+These corrections are manually authorized linguistic corrections only.
+
+They MUST NOT trigger any new LLM/API call.
+
+Do not perform any other translation, correction, rewriting, improvement, or normalization.
+
+--------------------------------------------------
+1. PRESERVE THE SCIENTIFIC ARTIFACTS
+--------------------------------------------------
+
+The corrections apply ONLY to the Portuguese expert-evaluation presentation layer.
+
+Do NOT modify:
+
+- `research_results/adr_generation_results.csv`
+- `research_results/pattern_selection_results.csv`
+- `research_results/pattern_selection_results_before_adr.csv`
+- original ADR JSON outputs
+- experimental prompts
+- pattern-selection artifacts
+- RAG artifacts
+- original datasets
+- original pattern catalog
+
+Do not regenerate any ADR.
+Do not rerun pattern selection.
+Do not rerun ADR generation.
+
+--------------------------------------------------
+2. RECORD THE MANUAL CORRECTIONS
+--------------------------------------------------
+
+Preserve full provenance of these corrections.
+
+The final translation/audit artifacts must make it possible to trace:
+
+original scientific text
+→ LLM translation candidate
+→ manually approved Portuguese evaluation text
+
+Record that these five field-level corrections were manually authorized after language validation detected residual English.
+
+Do not overwrite provenance in a way that makes the manual intervention invisible.
+
+If the existing audit structure does not currently distinguish the LLM candidate from the final manually approved text, minimally extend the audit/provenance artifact as necessary to preserve this distinction.
+
+Do not change the scientific source dataset.
+
+--------------------------------------------------
+3. FINALIZE THE TRANSLATION MAPPINGS
+--------------------------------------------------
+
+After applying ONLY the five approved local corrections, finalize:
+
+`research_results/expert_evaluation_translations_pt.csv`
+
+The expected mapping totals remain:
+
+- total mappings: 324
+- preserved Portuguese: 12
+- translated non-Portuguese: 289
+- partially translated mixed: 14
+- preserved empty: 9
+
+Do not change these classification counts because of the manual linguistic corrections.
+
+The five corrections are post-translation linguistic review actions, not new translation classifications.
+
+--------------------------------------------------
+4. GENERATE THE FINAL EVALUATION ARTIFACTS
+--------------------------------------------------
+
+Generate:
+
+`research_results/expert_evaluation_cases_pt.csv`
+
+and:
+
+`research_results/expert_evaluation_translation_audit.csv`
+
+Also create/finalize:
+
+`research_results/compile_expert_evaluation.py`
+
+The compiler must make ZERO API calls.
+
+The final expert evaluation dataset must contain exactly these columns, in this order:
+
+system_id
+user_story_id
+system_purpose
+user_story
+acceptance_criteria
+pattern_id
+pattern_name_pt
+pattern_motivation_pt
+pattern_solution_pt
+pattern_consequences_pt
+adr_title_pt
+adr_status_pt
+adr_context_pt
+adr_decision_pt
+adr_consequences_pt
+
+Do not include:
+
+classification
+evidence_refs
+evidence_text
+rationale
+rag_top5
+adr_model
+adr_reasoning_effort
+adr_response_id
+
+Do not include questionnaire questions or evaluator responses.
+
+--------------------------------------------------
+5. FINAL LANGUAGE VALIDATION
+--------------------------------------------------
+
+Re-run the Portuguese presentation-language validation after applying the five approved corrections.
+
+Confirm that no unintended residual English remains in the presentation fields.
+
+Do not treat legitimate architectural proper names or technical terms that should conventionally remain unchanged as errors merely because they originate from English.
+
+However, do not silently approve questionable cases.
+
+If any NEW residual-language issue is detected beyond the five cases already authorized:
+
+STOP.
+
+Report it for manual review.
+
+Do not automatically correct it.
+
+--------------------------------------------------
+6. FINAL STRUCTURAL VALIDATION
+--------------------------------------------------
+
+Validate:
+
+SOURCE DATASET
+
+- rows = 36
+- unique `(user_story_id, pattern_id)` pairs = 36
+- duplicate pairs = 0
+
+TRANSLATION MAPPINGS
+
+- rows = 324
+- unique case × field mappings = 324
+- preserved Portuguese = 12
+- translated non-Portuguese = 289
+- partially translated mixed = 14
+- preserved empty = 9
+- duplicate mappings = 0
+- missing mappings = 0
+
+EVALUATION DATASET
+
+- rows = 36
+- unique pairs = 36
+- duplicate pairs = 0
+- missing pairs = 0
+- unexpected pairs = 0
+
+REQUIREMENTS
+
+Confirm exact preservation against `adr_generation_results.csv`:
+
+- `system_purpose`: 36/36 identical
+- `user_story`: 36/36 identical
+- `acceptance_criteria`: 36/36 identical
+
+PATTERNS
+
+- legitimate empty pattern fields preserved = 9/9
+- all non-empty Portuguese presentation fields suitable for expert evaluation
+
+ADRs
+
+- non-empty `adr_title_pt` = 36
+- `adr_status_pt == "Proposto"` = 36
+- non-empty `adr_context_pt` = 36
+- non-empty `adr_decision_pt` = 36
+- non-empty `adr_consequences_pt` = 36
+
+TRACEABILITY
+
+- source pair set == evaluation pair set = YES
+
+--------------------------------------------------
+7. MANUAL-CORRECTION VALIDATION
+--------------------------------------------------
+
+Explicitly verify that the final evaluation material contains:
+
+For `SYS03-US02 × 014`:
+
+- no residual `Commercial` in `adr_title_pt`
+- no residual `Commercial` in `adr_context_pt`
+- no residual `Commercial` in `adr_decision_pt`
+- no residual `Commercial` in `adr_consequences_pt`
+- the corresponding approved Portuguese term is `Comercial`
+
+For `SYS04-US03 × 014`:
+
+- no residual `Machine Learning` in `pattern_motivation_pt`
+- the corresponding approved Portuguese expression is `aprendizado de máquina`
+
+Confirm that the original scientific source values remain unchanged.
+
+--------------------------------------------------
+8. DETERMINISTIC REPRODUCIBILITY
+--------------------------------------------------
+
+After generating the final files, record SHA-256 hashes for:
+
+- `research_results/expert_evaluation_cases_pt.csv`
+- `research_results/expert_evaluation_translation_audit.csv`
+
+Then run:
+
+`python -B research_results/compile_expert_evaluation.py`
+
+The compiler must make:
+
+API calls = 0
+
+Run the deterministic compilation again and verify that the generated outputs are byte-for-byte identical.
+
+The manually approved corrections must be represented in deterministic local preparation data so that they are reproduced without an API call.
+
+--------------------------------------------------
+9. PROTECTED-ARTIFACT CHECK
+--------------------------------------------------
+
+Use the existing baseline/hash validation to confirm that no protected scientific or experimental artifact changed.
+
+Only expert-evaluation preparation artifacts may be created or modified.
+
+Do not commit.
+Do not push.
+
+--------------------------------------------------
+10. FINAL REPORT
+--------------------------------------------------
+
+Report:
+
+1. source rows;
+2. source unique pairs;
+3. translation mapping rows;
+4. preserved Portuguese count;
+5. translated non-Portuguese count;
+6. partially translated mixed count;
+7. preserved empty count;
+8. manual linguistic corrections applied = 5;
+9. additional API calls made in this phase;
+10. evaluation dataset rows;
+11. unique evaluation pairs;
+12. duplicate pairs;
+13. missing pairs;
+14. unexpected pairs;
+15. requirement fields preserved exactly;
+16. legitimate empty pattern fields preserved;
+17. `Proposto` status count;
+18. result of final Portuguese-language validation;
+19. confirmation that the five manually approved corrections are present;
+20. confirmation that the original scientific values remain unchanged;
+21. pair-set equality result;
+22. deterministic compiler API calls;
+23. deterministic rerun byte-for-byte result;
+24. final SHA-256 hashes;
+25. files created;
+26. files modified;
+27. protected-artifact validation result;
+28. confirmation that no ADR was regenerated;
+29. confirmation that no experimental prompt was modified;
+30. confirmation that no commit or push was performed.
+
+IMPORTANT:
+
+Make ZERO additional LLM/API calls.
+
+Apply ONLY the five explicitly authorized local linguistic corrections.
+
+If any new issue requiring semantic judgment is found, STOP and report it instead of correcting it automatically.
