@@ -1,0 +1,224 @@
+{
+  "approval_basis": "User expressly authorized a correction conditional on unambiguous evidence; mapping reviewed by Codex, not independently adjudicated by a human.",
+  "correction_justification": "Replace only malformed SYS02-US01-US01 with SYS02-US01. The case has one User Story, identified exactly as SYS02-US01, whose original text is: Eu como usuário desejo que o sistema gere um documento inicial de acordo com o registro cadastrado no sistema de licitações. Attempt 1 explicitly states 'The user story also asks the system to generate an initial document'; attempt 2 independently states 'The story is about generating an initial document from a registered record'. These refer to this uniquely identified User Story, not a second story or an acceptance criterion. The malformed label duplicates the US01 segment. AC02 and AC05 already have correct separate references. Preserve reference order; do not drop evidence or change verdict, rationale, or identified_gaps. Use the earliest recorded attempt (attempt 1), not the most favorable wording; retain attempt 2 only for corroboration. This is an assistant-performed technical review under the user's explicit conditional authorization, not an independent human architectural adjudication.",
+  "failed_responses": [
+    {
+      "judgment": {
+        "evidence_refs": [
+          "SYS02-US01-AC02",
+          "SYS02-US01-AC05",
+          "SYS02-US01-US01"
+        ],
+        "identified_gaps": [],
+        "rationale": "The pattern's motivation applies when the next step in the business process does not depend on the prediction, so a queue or cache can decouple request from retrieval. AC02 says the system replaces layout variables with AI-generated content, and AC05 says it concatenates the layout text with the variable texts. Both show that document assembly, the next step, depends directly on the AI output. This is a contextual mismatch with the pattern's motivation. The user story also asks the system to generate an initial document, which implies the user needs the result. No requirement states that the process continues independently of the prediction, and none mentions deferred retrieval or latency decoupling. The not_applicable classification is therefore defensible, and the cited references are the relevant ones. The rationale is brief but it matches the evidence.",
+        "verdict": "supported"
+      },
+      "response_metadata": {
+        "content_block_types": [
+          "text"
+        ],
+        "elapsed_seconds": 2.8494698789872928,
+        "raw_response_metadata": {
+          "container": null,
+          "diagnostics": null,
+          "id": "msg_011CgqWNf2yhXzAYoUTz9wP6",
+          "model": "claude-sonnet-5-5",
+          "role": "assistant",
+          "stop_details": null,
+          "stop_reason": "end_turn",
+          "stop_sequence": null,
+          "type": "message",
+          "usage": {
+            "cache_creation": {
+              "ephemeral_1h_input_tokens": 0,
+              "ephemeral_5m_input_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "inference_geo": "global",
+            "input_tokens": 2650,
+            "output_tokens": 315,
+            "output_tokens_details": {
+              "thinking_tokens": 0
+            },
+            "server_tool_use": null,
+            "service_tier": "standard",
+            "speed": "standard"
+          }
+        },
+        "request_id": "req_011CgqWNehPU8REChmmg7bkZ",
+        "response_id": "msg_011CgqWNf2yhXzAYoUTz9wP6",
+        "response_model": "claude-sonnet-5-5",
+        "response_text": "{\"verdict\":\"supported\",\"evidence_refs\":[\"SYS02-US01-AC02\",\"SYS02-US01-AC05\",\"SYS02-US01-US01\"],\"rationale\":\"The pattern's motivation applies when the next step in the business process does not depend on the prediction, so a queue or cache can decouple request from retrieval. AC02 says the system replaces layout variables with AI-generated content, and AC05 says it concatenates the layout text with the variable texts. Both show that document assembly, the next step, depends directly on the AI output. This is a contextual mismatch with the pattern's motivation. The user story also asks the system to generate an initial document, which implies the user needs the result. No requirement states that the process continues independently of the prediction, and none mentions deferred retrieval or latency decoupling. The not_applicable classification is therefore defensible, and the cited references are the relevant ones. The rationale is brief but it matches the evidence.\",\"identified_gaps\":[]}",
+        "stop_reason": "end_turn",
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 2650,
+          "output_tokens": 315,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "server_tool_use": null,
+          "service_tier": "standard",
+          "speed": "standard"
+        }
+      },
+      "source_failure": {
+        "attempt_id": "21f66b1f-300e-4732-b071-b583389f4dc7",
+        "attempt_number": 1,
+        "error_source": "replayed_from_preserved_raw_response",
+        "error_type": "ResponseValidationError",
+        "event_line": 2,
+        "raw_response_file": "/home/felipe/projetos/adr4ai_app/experiments/llm_judge_support_rq1/outputs/claude-sonnet-5-5/v1.1/full/events.jsonl",
+        "raw_response_json_pointer": "/1/response_metadata",
+        "raw_response_sha256": "309a2470a9acd80da138e97d055f1f2811811cfbd68c774843d8331958fc4c6d",
+        "raw_text_field": "response_metadata.response_text",
+        "request_id": "req_011CgqWNehPU8REChmmg7bkZ",
+        "response_id": "msg_011CgqWNf2yhXzAYoUTz9wP6",
+        "validation_error": "Unknown or foreign evidence reference"
+      }
+    },
+    {
+      "judgment": {
+        "evidence_refs": [
+          "SYS02-US01-AC02",
+          "SYS02-US01-AC05",
+          "SYS02-US01-US01"
+        ],
+        "identified_gaps": [],
+        "rationale": "The pattern's motivation is that the next step in the business process does not depend on the prediction, so the request and retrieval of the prediction can be decoupled through a queue or cache. AC02 requires replacing layout variables with AI-generated content, and AC05 requires concatenating the layout text with those variable texts. Both show that document assembly, which is the next step, directly depends on the model output. This is a relevant contextual mismatch with the pattern's precondition. The story is about generating an initial document from a registered record, and nothing in it describes a decoupled workflow where the process proceeds without the prediction. The rationale is consistent with this evidence. It does not claim that asynchronous execution is technically impossible, only that the stated motivation is not met. It could be argued that a user could still wait for a result delivered asynchronously. But the requirements give no sign of such a need, and the pattern's own condition of independence from the prediction is contradicted.",
+        "verdict": "supported"
+      },
+      "response_metadata": {
+        "content_block_types": [
+          "text"
+        ],
+        "elapsed_seconds": 3.7961458940117154,
+        "raw_response_metadata": {
+          "container": null,
+          "diagnostics": null,
+          "id": "msg_011CgqmMm36ixiDwX58mcCin",
+          "model": "claude-sonnet-5-5",
+          "role": "assistant",
+          "stop_details": null,
+          "stop_reason": "end_turn",
+          "stop_sequence": null,
+          "type": "message",
+          "usage": {
+            "cache_creation": {
+              "ephemeral_1h_input_tokens": 0,
+              "ephemeral_5m_input_tokens": 0
+            },
+            "cache_creation_input_tokens": 0,
+            "cache_read_input_tokens": 0,
+            "inference_geo": "global",
+            "input_tokens": 2650,
+            "output_tokens": 369,
+            "output_tokens_details": {
+              "thinking_tokens": 0
+            },
+            "server_tool_use": null,
+            "service_tier": "standard",
+            "speed": "standard"
+          }
+        },
+        "request_id": "req_011CgqmMkDk6zf66xyKGR9BK",
+        "response_id": "msg_011CgqmMm36ixiDwX58mcCin",
+        "response_model": "claude-sonnet-5-5",
+        "response_text": "{\"verdict\":\"supported\",\"evidence_refs\":[\"SYS02-US01-AC02\",\"SYS02-US01-AC05\",\"SYS02-US01-US01\"],\"rationale\":\"The pattern's motivation is that the next step in the business process does not depend on the prediction, so the request and retrieval of the prediction can be decoupled through a queue or cache. AC02 requires replacing layout variables with AI-generated content, and AC05 requires concatenating the layout text with those variable texts. Both show that document assembly, which is the next step, directly depends on the model output. This is a relevant contextual mismatch with the pattern's precondition. The story is about generating an initial document from a registered record, and nothing in it describes a decoupled workflow where the process proceeds without the prediction. The rationale is consistent with this evidence. It does not claim that asynchronous execution is technically impossible, only that the stated motivation is not met. It could be argued that a user could still wait for a result delivered asynchronously. But the requirements give no sign of such a need, and the pattern's own condition of independence from the prediction is contradicted.\",\"identified_gaps\":[]}",
+        "stop_reason": "end_turn",
+        "usage": {
+          "cache_creation": {
+            "ephemeral_1h_input_tokens": 0,
+            "ephemeral_5m_input_tokens": 0
+          },
+          "cache_creation_input_tokens": 0,
+          "cache_read_input_tokens": 0,
+          "inference_geo": "global",
+          "input_tokens": 2650,
+          "output_tokens": 369,
+          "output_tokens_details": {
+            "thinking_tokens": 0
+          },
+          "server_tool_use": null,
+          "service_tier": "standard",
+          "speed": "standard"
+        }
+      },
+      "source_failure": {
+        "attempt_id": "15f03a77-04c1-49b5-bdba-aa0143e6b28e",
+        "attempt_number": 2,
+        "error_source": "replayed_from_preserved_raw_response",
+        "error_type": "ResponseValidationError",
+        "event_line": 4,
+        "raw_response_file": "/home/felipe/projetos/adr4ai_app/experiments/llm_judge_support_rq1/outputs/claude-sonnet-5-5/v1.1/full/events.jsonl",
+        "raw_response_json_pointer": "/3/response_metadata",
+        "raw_response_sha256": "eb0b0e6330b59bd29f750ef7fa3d1aa5d8603cc34baf6d0b2954da815a262f39",
+        "raw_text_field": "response_metadata.response_text",
+        "request_id": "req_011CgqmMkDk6zf66xyKGR9BK",
+        "response_id": "msg_011CgqmMm36ixiDwX58mcCin",
+        "validation_error": "Unknown or foreign evidence reference"
+      }
+    }
+  ],
+  "identical_rationale_text": false,
+  "original_requirement_case": {
+    "acceptance_criteria": [
+      {
+        "acceptance_criterion": "O sistema deverá seguir o layout previamente cadastrado pelo administrador do sistema",
+        "acceptance_criterion_id": "SYS02-US01-AC01"
+      },
+      {
+        "acceptance_criterion": "O sistema deverá substituir as variáveis com o conteúdo gerado pelo modelo de IA",
+        "acceptance_criterion_id": "SYS02-US01-AC02"
+      },
+      {
+        "acceptance_criterion": "O sistema deverá utilizar o layout apropriado para o tipo de documento",
+        "acceptance_criterion_id": "SYS02-US01-AC03"
+      },
+      {
+        "acceptance_criterion": "O sistema deverá utilizar o padrão de linguagem na norma técnico-jurídica",
+        "acceptance_criterion_id": "SYS02-US01-AC04"
+      },
+      {
+        "acceptance_criterion": "O sistema deverá concatenar o texto do layout com os textos das variáveis mantendo um padrão legível e harmônico",
+        "acceptance_criterion_id": "SYS02-US01-AC05"
+      }
+    ],
+    "requirement_text": "System Purpose:\nAssistente para geração de documentos licitatórios\n\nUser Story:\n[SYS02-US01] Eu como usuário desejo que o sistema gere um documento inicial de acordo com o registro cadastrado no sistema de licitações\n\nAcceptance Criteria:\n[SYS02-US01-AC01] O sistema deverá seguir o layout previamente cadastrado pelo administrador do sistema\n[SYS02-US01-AC02] O sistema deverá substituir as variáveis com o conteúdo gerado pelo modelo de IA\n[SYS02-US01-AC03] O sistema deverá utilizar o layout apropriado para o tipo de documento\n[SYS02-US01-AC04] O sistema deverá utilizar o padrão de linguagem na norma técnico-jurídica\n[SYS02-US01-AC05] O sistema deverá concatenar o texto do layout com os textos das variáveis mantendo um padrão legível e harmônico",
+    "system": "System_02",
+    "system_purpose": "Assistente para geração de documentos licitatórios",
+    "user_story": "Eu como usuário desejo que o sistema gere um documento inicial de acordo com o registro cadastrado no sistema de licitações",
+    "user_story_id": "SYS02-US01"
+  },
+  "pair": [
+    "SYS02-US01",
+    "051"
+  ],
+  "pattern": {
+    "consequences": "Separation of a prediction request and prediction retrieval.",
+    "id": "051",
+    "motivation": "When in your business logic, the next step in the process does not depend on the prediction.",
+    "name": "Asynchronous pattern",
+    "solution": "Place a queue or cache in between the client and predictor"
+  },
+  "review_timestamp": "2026-11-08T18:14:39.440580+00:00",
+  "same_identified_gaps": true,
+  "same_verdict": true,
+  "selected_attempt_rule": "earliest reserved attempt; no selection by verdict or rationale preference",
+  "substantive_review": "Both support GPT's not_applicable decision because the stated document assembly depends on generated content, while the pattern's motivation presumes the next step does not depend on prediction. Attempt 2 contains additional discussion of asynchronous delivery; the rationales are not merged or treated as identical.",
+  "valid_identifiers": [
+    "SYS02-US01",
+    "SYS02-US01-AC01",
+    "SYS02-US01-AC02",
+    "SYS02-US01-AC03",
+    "SYS02-US01-AC04",
+    "SYS02-US01-AC05"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "policy_id": "adr4ai-rq1-support-validation-continuation-op1",
+  "amendment_kind": "operational_execution_policy",
+  "scientific_protocol_id": "adr4ai-rq1-response-conditioned-support-v1.1",
+  "scientific_protocol_changed": false,
+  "activation_flag": "--continue-on-validation-error",
+  "prior_attempted_unvalidated_pairs": "defer without another API request, irrespective of remaining attempt allowance",
+  "validated_pairs": "skip without replacement",
+  "never_attempted_pairs": "one attempt per pair in original plan order",
+  "local_response_validation_errors": "preserve raw text/metadata and exact error; record invalid; continue with next never-attempted pair",
+  "api_transport_storage_provenance_errors": "stop; preserve failure information and write partial validation summary where possible",
+  "attempt_limit": "retain existing scientific manifest limit; never reset counters or consume another attempt just to proceed",
+  "completion": "report incomplete coverage whenever any pair lacks a validated original response",
+  "corrections": "separate explicit human-approved reference-only analytical records; never mutate official responses, verdicts, or counts"
+}

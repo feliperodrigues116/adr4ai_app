@@ -1,0 +1,24 @@
+{
+  "all_15_partial_applicable_annotations_quote_original_gaps": true,
+  "all_839_original_judgments_unchanged": true,
+  "all_case_reference_and_json_validations": "passed using unchanged protocol validator",
+  "corrected_verdict_rationale_and_gaps_unchanged": true,
+  "exact_consolidated_source_reconstruction": true,
+  "frozen_source_manifest_protocol_and_correction_hashes_verified": true,
+  "gpt_classifications": {
+    "applicable": 36,
+    "insufficient_information": 773,
+    "not_applicable": 31
+  },
+  "operational_policy_id": "adr4ai-rq1-support-validation-continuation-op1",
+  "origins": {
+    "official_api_validated": 839,
+    "technically_corrected_analytical": 1
+  },
+  "patterns": 70,
+  "scientific_protocol_id": "adr4ai-rq1-response-conditioned-support-v1.1",
+  "status": "passed",
+  "systems": 4,
+  "unique_pairs": 840,
+  "user_stories": 12
+}

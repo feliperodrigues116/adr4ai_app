@@ -1,0 +1,13 @@
+{
+  "added_clarification": "Protocol clarification: The original GPT protocol requires nonempty requirement_refs only for applicable decisions; empty references are valid for not_applicable and insufficient_information and must not automatically be treated as deficiencies. For insufficient_information, absent architectural details may correctly justify the classification and must not automatically be reported as a deficiency. identified_gaps must contain only concrete, materially relevant limitations in the justification or evidential support of the original GPT decision, not merely details missing from the requirements or permitted omissions of references. Assess whether any such absence actually weakens the justification of the assigned original classification; it neither determines nor favors any support verdict.",
+  "change_scope": "One clarification paragraph; verdict definitions, remaining rubric, schema, model, and validation unchanged.",
+  "date": "2026-11-08",
+  "instructions_sha256_canonical_json": "3600c5d4cbbc7e90fd7a2428b9b5775dc296aac4ee0189beadd64c4c4247997b",
+  "instructions_sha256_raw_utf8": "82dd72af7b3d3961ef3ec261d394d92731879e22c3c644f8d4b53af9c07b49f1",
+  "previous_instructions_sha256_raw_utf8": "9771d4242bbceb164c5f95c33f024c1f2f30b3cde6f6880ed5cc95c8177e4d28",
+  "previous_pilot_manifest": "experiments/llm_judge_support_rq1/outputs/claude-sonnet-5-5/technical_pilot/manifest.json",
+  "previous_pilot_manifest_sha256": "1c81254e5819e01e58e59589f5ee0880654904fd8e7fb9678d77bd1a04066183",
+  "previous_protocol_id": "adr4ai-rq1-response-conditioned-support-v1",
+  "protocol_id": "adr4ai-rq1-response-conditioned-support-v1.1",
+  "protocol_version": "v1.1"
+}

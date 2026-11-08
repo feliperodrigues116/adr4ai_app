@@ -1,0 +1,5 @@
+system,pairs,agreements,disagreements,overall_agreement,expected_agreement_from_marginals,cohens_kappa,gpt_applicable,claude_applicable,both_applicable,gpt_applicable_not_claude_applicable,claude_applicable_not_gpt_applicable,applicable_union,positive_jaccard,gpt_selected_overlap_fraction,claude_selected_overlap_fraction,positive_dice_agreement,gpt_not_applicable,claude_not_applicable,gpt_insufficient_information,claude_insufficient_information,gpt_insufficient_claude_not_applicable,gpt_not_applicable_claude_insufficient
+System_01,210,79,131,0.3761904761904762,0.34049886621315195,0.05411910328703067,7,4,4,3,0,7,0.5714285714285714,0.5714285714285714,1.0,0.7272727272727273,6,134,197,72,127,1
+System_02,210,88,122,0.41904761904761906,0.39891156462585037,0.033499320959710276,12,10,6,6,4,16,0.375,0.5,0.6,0.5454545454545454,2,112,196,88,111,1
+System_03,210,80,130,0.38095238095238093,0.3443990929705215,0.05575539568345324,8,8,6,2,2,10,0.6,0.75,0.75,0.75,10,130,192,72,123,3
+System_04,210,66,144,0.3142857142857143,0.2595918367346939,0.07386990077177508,9,8,5,4,3,12,0.4166666666666667,0.5555555555555556,0.625,0.5882352941176471,13,152,188,50,137,0

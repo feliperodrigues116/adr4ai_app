@@ -1,0 +1,409 @@
+[
+  {
+    "user_story_id": "SYS01-US03",
+    "pattern_id": "001",
+    "recorded_verdict": "partially_supported",
+    "codes": [
+      "A1",
+      "A3",
+      "A4"
+    ],
+    "primary_interpretation": "specific_claimed_evidential_mapping_concern",
+    "analyst_note": "The judge distinguishes traceability from a rule-based output safeguard. This is a specific claimed evidence-to-intent gap; the annotation does not establish that an explicit mechanism is necessary for applicability.",
+    "evidence": [
+      {
+        "field": "identified_gaps[0]",
+        "quote": "The rationale treats AC01 (source metadata display) as a safeguard, though it describes traceability and not validation of model output."
+      },
+      {
+        "field": "identified_gaps[1]",
+        "quote": "No requirement explicitly states that outputs are checked or filtered against the catalog by a deterministic mechanism, so the safeguard role of AC02 is inferred."
+      },
+      {
+        "field": "identified_gaps[2]",
+        "quote": "The rationale does not explain how catalog restriction acts as a rule-based control over ML predictions, as opposed to a data-scope constraint."
+      }
+    ],
+    "coding_author": "Codex, assistant-authored post-hoc qualitative interpretation; not independent expert adjudication"
+  },
+  {
+    "user_story_id": "SYS01-US03",
+    "pattern_id": "013",
+    "recorded_verdict": "partially_supported",
+    "codes": [
+      "A1",
+      "A3",
+      "A5"
+    ],
+    "primary_interpretation": "specific_claimed_evidential_mapping_concern",
+    "analyst_note": "Source transparency is linked to a generic motivation while adaptive interface/orchestration needs are unshown in the judge's account. Treat the specific mapping concern separately from insisting on the complete implementation.",
+    "evidence": [
+      {
+        "field": "identified_gaps[0]",
+        "quote": "The rationale links the requirement only to the 'interpretability and explainability' motivation, with no evidence of a need for a frontend AI, an AI orchestrator, or evolving frontend-backend contracts."
+      },
+      {
+        "field": "identified_gaps[1]",
+        "quote": "The requirements describe a fixed output (document, version, section) and contain no signal of dynamic interface adaptation, bidirectionality, or personalization."
+      },
+      {
+        "field": "identified_gaps[2]",
+        "quote": "SYS01-US03-AC02 (catalog-only restriction) is not addressed in the rationale and has no clear connection to the pattern's intent."
+      }
+    ],
+    "coding_author": "Codex, assistant-authored post-hoc qualitative interpretation; not independent expert adjudication"
+  },
+  {
+    "user_story_id": "SYS01-US03",
+    "pattern_id": "060",
+    "recorded_verdict": "partially_supported",
+    "codes": [
+      "A1",
+      "A3",
+      "A7"
+    ],
+    "primary_interpretation": "specific_mapping_concern_with_alternative_design_argument",
+    "analyst_note": "The judge distinguishes a content-scope constraint from prediction-serving controls, but also invokes other ways to satisfy it. Alternative solutions alone are not a justification defect.",
+    "evidence": [
+      {
+        "field": "identified_gaps[0]",
+        "quote": "The rationale does not show how AC02 requires a rule/parameter mechanism that alters prediction behavior (stop, retry, timeout, edge-case control), as opposed to a data-scope or retrieval-source restriction."
+      },
+      {
+        "field": "identified_gaps[1]",
+        "quote": "The rationale ignores that the user story and AC01 concern source traceability and so do not evidence the pattern's intent."
+      },
+      {
+        "field": "identified_gaps[2]",
+        "quote": "The rationale does not address that AC02 could be satisfied by catalog-limited retrieval or validation without any parameter-based serving control."
+      }
+    ],
+    "coding_author": "Codex, assistant-authored post-hoc qualitative interpretation; not independent expert adjudication"
+  },
+  {
+    "user_story_id": "SYS02-US01",
+    "pattern_id": "002",
+    "recorded_verdict": "partially_supported",
+    "codes": [
+      "A1",
+      "A2",
+      "A7"
+    ],
+    "primary_interpretation": "specific_mapping_concern_with_alternative_design_argument",
+    "analyst_note": "The judge questions the jump from document operations to independent filters and intermediate data flow. A cohesive template routine is an alternative, not by itself evidence against a defensible pipeline interpretation.",
+    "evidence": [
+      {
+        "field": "identified_gaps[0]",
+        "quote": "The rationale infers 'successive transformations' without evidence in the criteria that the steps must be chained as independent stages with intermediate results passed between them."
+      },
+      {
+        "field": "identified_gaps[1]",
+        "quote": "No criterion shows a need for modifiability, reordering, or addition and removal of processing steps, which is the pattern's main benefit."
+      },
+      {
+        "field": "identified_gaps[2]",
+        "quote": "The rationale does not address why template substitution and concatenation cannot be one cohesive operation instead of separate filters."
+      },
+      {
+        "field": "identified_gaps[3]",
+        "quote": "AC03 (layout selection) is more a selection or configuration rule than a data-transformation stage, so its inclusion as a filter is weakly justified."
+      }
+    ],
+    "coding_author": "Codex, assistant-authored post-hoc qualitative interpretation; not independent expert adjudication"
+  },
+  {
+    "user_story_id": "SYS02-US02",
+    "pattern_id": "001",
+    "recorded_verdict": "partially_supported",
+    "codes": [
+      "A1",
+      "A4",
+      "A7"
+    ],
+    "primary_interpretation": "specific_mapping_concern_with_alternative_design_argument",
+    "analyst_note": "The judge identifies unstated ML/gating and safety assumptions beyond a context-preservation constraint. A preservation check being only one option does not alone weaken applicability.",
+    "evidence": [
+      {
+        "field": "identified_gaps[0]",
+        "quote": "The rationale does not establish that the text-improvement component is an ML model whose predictions need encapsulation. This is an unstated inference."
+      },
+      {
+        "field": "identified_gaps[1]",
+        "quote": "AC01 expresses a quality constraint, not a need for deterministic checks over automated output. The rationale treats the requirement as equivalent to the pattern's safeguard intent without justifying that step."
+      },
+      {
+        "field": "identified_gaps[2]",
+        "quote": "The rationale does not address the pattern's safety- or security-critical framing, or the stability, drift, and adversarial concerns. It relies only on a general notion of incorrect output."
+      }
+    ],
+    "coding_author": "Codex, assistant-authored post-hoc qualitative interpretation; not independent expert adjudication"
+  },
+  {
+    "user_story_id": "SYS02-US02",
+    "pattern_id": "002",
+    "recorded_verdict": "partially_supported",
+    "codes": [
+      "A1",
+      "A2",
+      "A5"
+    ],
+    "primary_interpretation": "specific_claimed_evidential_mapping_concern",
+    "analyst_note": "The specific issue is treating user-selected tasks as an ordered composable pipeline. Criticism of omitted criteria does not establish a requirement to cite every criterion.",
+    "evidence": [
+      {
+        "field": "identified_gaps[0]",
+        "quote": "The rationale equates variety of text operations with the pattern's need without evidence of sequential, staged, or incremental processing."
+      },
+      {
+        "field": "identified_gaps[1]",
+        "quote": "No requirement indicates that processing steps must be independently added, removed, or reconfigured, which is the flexibility benefit of the pattern."
+      },
+      {
+        "field": "identified_gaps[2]",
+        "quote": "AC03 describes user-selected operations (reformulate, summarize, expand), which do not necessarily form a pipeline, and the rationale does not address this."
+      },
+      {
+        "field": "identified_gaps[3]",
+        "quote": "Cited references omit AC01 and AC02, and the rationale does not discuss whether they support or weaken applicability."
+      }
+    ],
+    "coding_author": "Codex, assistant-authored post-hoc qualitative interpretation; not independent expert adjudication"
+  },
+  {
+    "user_story_id": "SYS02-US02",
+    "pattern_id": "060",
+    "recorded_verdict": "partially_supported",
+    "codes": [
+      "A1",
+      "A3"
+    ],
+    "primary_interpretation": "specific_claimed_evidential_mapping_concern",
+    "analyst_note": "The judge distinguishes a selected transformation mode and preservation goal from anomaly/edge-case serving controls. This is an intent-mapping concern rather than generic uncertainty.",
+    "evidence": [
+      {
+        "field": "identified_gaps[0]",
+        "quote": "No requirement mentions anomaly or edge-case detection, or rule-based stopping, retrying, or timeout behavior, which is central to the pattern; the rationale does not acknowledge this."
+      },
+      {
+        "field": "identified_gaps[1]",
+        "quote": "The rationale equates a context-preservation quality constraint (AC01) with a rule-based control mechanism without showing how the requirement implies such a mechanism."
+      },
+      {
+        "field": "identified_gaps[2]",
+        "quote": "User-selected transformation mode (AC03) is a functional feature and is only loosely connected to parameter-based control of model prediction behavior."
+      }
+    ],
+    "coding_author": "Codex, assistant-authored post-hoc qualitative interpretation; not independent expert adjudication"
+  },
+  {
+    "user_story_id": "SYS02-US02",
+    "pattern_id": "064",
+    "recorded_verdict": "partially_supported",
+    "codes": [
+      "A1",
+      "A3",
+      "A5"
+    ],
+    "primary_interpretation": "specific_claimed_evidential_mapping_concern",
+    "analyst_note": "Functional on-demand editing is distinguished from a production-workflow shift toward enrichment cycles. The judge's references to all enablers should not be read as a universal requirement to specify the whole architecture.",
+    "evidence": [
+      {
+        "field": "identified_gaps[0]",
+        "quote": "The rationale equates user-triggered rewrite/summarize/expand with Daisy's pull-based enrichment cycles without showing evidence of a push/manual/linear pipeline being replaced."
+      },
+      {
+        "field": "identified_gaps[1]",
+        "quote": "No requirement evidence of automated content analysis, rich metadata creation, or scaling of enrichment across a content estate, which are central to the pattern's motivation."
+      },
+      {
+        "field": "identified_gaps[2]",
+        "quote": "AC01 and AC02 (context preservation, standardized document types) were not used, and the rationale does not address how they relate to the pattern."
+      }
+    ],
+    "coding_author": "Codex, assistant-authored post-hoc qualitative interpretation; not independent expert adjudication"
+  },
+  {
+    "user_story_id": "SYS02-US02",
+    "pattern_id": "070",
+    "recorded_verdict": "partially_supported",
+    "codes": [
+      "A1",
+      "A7"
+    ],
+    "primary_interpretation": "specific_mapping_concern_with_alternative_design_argument",
+    "analyst_note": "The judge questions inference of multiple models from task variation, while also asking why one model could not suffice. Multiple models needing not be unique/best is distinct from evidence for condition-based selection.",
+    "evidence": [
+      {
+        "field": "identified_gaps[0]",
+        "quote": "The rationale does not show that the requirements need multiple models, as opposed to one model handling different operations."
+      },
+      {
+        "field": "identified_gaps[1]",
+        "quote": "It relies only on AC03 and does not consider AC02 (input document type variation) as possible condition attributes for selection."
+      },
+      {
+        "field": "identified_gaps[2]",
+        "quote": "It treats operation variation as the pattern's concern without linking it to the pattern's motivation that the prediction target varies a lot by condition."
+      }
+    ],
+    "coding_author": "Codex, assistant-authored post-hoc qualitative interpretation; not independent expert adjudication"
+  },
+  {
+    "user_story_id": "SYS02-US03",
+    "pattern_id": "002",
+    "recorded_verdict": "partially_supported",
+    "codes": [
+      "A1",
+      "A2",
+      "A7"
+    ],
+    "primary_interpretation": "specific_mapping_concern_with_alternative_design_argument",
+    "analyst_note": "The judge distinguishes a list of saving-time operations from modular filters. A one-routine alternative does not independently establish a support deficiency.",
+    "evidence": [
+      {
+        "field": "identified_gaps[0]",
+        "quote": "The rationale does not show positive evidence that the stages need to be modular, independently changeable, or chained as filters; it only lists the functional steps."
+      },
+      {
+        "field": "identified_gaps[1]",
+        "quote": "The claim of 'processamento em etapas, com resultados relacionados' is an inference. The criteria do not specify ordering, intermediate outputs, or data flow between stages."
+      },
+      {
+        "field": "identified_gaps[2]",
+        "quote": "AC03 (reporting corrected words) is a side output of the correction. The rationale does not explain how it fits the filter model."
+      }
+    ],
+    "coding_author": "Codex, assistant-authored post-hoc qualitative interpretation; not independent expert adjudication"
+  },
+  {
+    "user_story_id": "SYS03-US02",
+    "pattern_id": "001",
+    "recorded_verdict": "partially_supported",
+    "codes": [
+      "A1",
+      "A4"
+    ],
+    "primary_interpretation": "specific_claimed_evidential_mapping_concern",
+    "analyst_note": "The judge calls uncertainty, deterministic safeguards, and security framing unstated. This is a concrete claimed inference gap, not an independent finding that the concern is absent.",
+    "evidence": [
+      {
+        "field": "identified_gaps[0]",
+        "quote": "The requirements do not state that the ownership confirmation is an ML prediction with uncertainty, or that any confidence or quality check governs the status change; the rationale assumes this."
+      },
+      {
+        "field": "identified_gaps[1]",
+        "quote": "The rationale does not show that wrongly changing the status is a safety- or security-relevant consequence of the kind the pattern addresses."
+      },
+      {
+        "field": "identified_gaps[2]",
+        "quote": "The requirements focus on propagating the status change, not on guarding or verifying the AI's decision, so the rule-based safeguard need is inferred rather than shown."
+      }
+    ],
+    "coding_author": "Codex, assistant-authored post-hoc qualitative interpretation; not independent expert adjudication"
+  },
+  {
+    "user_story_id": "SYS03-US03",
+    "pattern_id": "050",
+    "recorded_verdict": "partially_supported",
+    "codes": [
+      "A6",
+      "A7"
+    ],
+    "primary_interpretation": "specific_mapping_concern_with_alternative_design_argument",
+    "analyst_note": "The judge separates conditional dependency from synchronous blocking and invokes asynchronous alternatives. Compare its supported SYS03-US02 × 050 wording; the recorded evidential thresholds may differ.",
+    "evidence": [
+      {
+        "field": "identified_gaps[0]",
+        "quote": "No requirement states or implies that the workflow must halt or wait synchronously for the prediction to finish; the rationale infers blocking from a simple conditional dependency."
+      },
+      {
+        "field": "identified_gaps[1]",
+        "quote": "The rationale does not distinguish a causal or conditional dependency from a synchronous blocking requirement, since asynchronous flows would satisfy the same condition."
+      },
+      {
+        "field": "identified_gaps[2]",
+        "quote": "No evidence on latency, response-time expectations, or caller/client interaction that would indicate the pattern's synchronous nature is needed."
+      }
+    ],
+    "coding_author": "Codex, assistant-authored post-hoc qualitative interpretation; not independent expert adjudication"
+  },
+  {
+    "user_story_id": "SYS04-US02",
+    "pattern_id": "028",
+    "recorded_verdict": "partially_supported",
+    "codes": [
+      "A3",
+      "A4"
+    ],
+    "primary_interpretation": "specific_claimed_evidential_mapping_concern",
+    "analyst_note": "The judge distinguishes a product's integration-test feature from ML release-gating tests and asks for domain transfer to be justified. Technological context alone should not negate shared architectural intent.",
+    "evidence": [
+      {
+        "field": "identified_gaps[0]",
+        "quote": "The pattern is ML-specific (faulty model/pipeline, prediction assertions), and the rationale never explains how it transfers to a non-ML simulator integration context."
+      },
+      {
+        "field": "identified_gaps[1]",
+        "quote": "The requirements make testing capability a product feature (the simulator enables testing of external systems) rather than a need to end-to-end test the simulator itself, and the rationale does not distinguish between these."
+      },
+      {
+        "field": "identified_gaps[2]",
+        "quote": "No requirement indicates a release-gating or quality-assurance pipeline concern, which is central to the pattern's motivation."
+      }
+    ],
+    "coding_author": "Codex, assistant-authored post-hoc qualitative interpretation; not independent expert adjudication"
+  },
+  {
+    "user_story_id": "SYS04-US03",
+    "pattern_id": "001",
+    "recorded_verdict": "partially_supported",
+    "codes": [
+      "A1",
+      "A3"
+    ],
+    "primary_interpretation": "specific_claimed_evidential_mapping_concern",
+    "analyst_note": "The judge distinguishes environment isolation from a rule-based decision layer around predictions. Both share protective intent; the annotation does not decide whether that shared intent is sufficient.",
+    "evidence": [
+      {
+        "field": "identified_gaps[0]",
+        "quote": "AC02 describes environment isolation (simulation only), not a deterministic rule-based mechanism that mediates model outputs; the rationale does not bridge this difference."
+      },
+      {
+        "field": "identified_gaps[1]",
+        "quote": "No cited requirement mentions quality checks, validation rules, or filtering of model recommendations, so the pattern's core solution element is not evidenced."
+      },
+      {
+        "field": "identified_gaps[2]",
+        "quote": "The rationale does not address that the protection sought is achieved by the twin itself, which may make the safeguard concern only incidental to this story."
+      }
+    ],
+    "coding_author": "Codex, assistant-authored post-hoc qualitative interpretation; not independent expert adjudication"
+  },
+  {
+    "user_story_id": "SYS04-US03",
+    "pattern_id": "003",
+    "recorded_verdict": "partially_supported",
+    "codes": [
+      "A5",
+      "A6",
+      "A7"
+    ],
+    "primary_interpretation": "specific_mapping_concern_with_alternative_design_argument",
+    "analyst_note": "The judge asks for client-initiated/concurrent access beyond shared variables and model connections. Sequential evaluation is an alternative; concurrency or a unique topology is not automatically required by the support rubric.",
+    "evidence": [
+      {
+        "field": "identified_gaps[0]",
+        "quote": "The rationale asserts \"multiple data consumers\" without showing that models initiate connections to request services from a central component; the requirements say only 'conectar' and 'fornecer variáveis'."
+      },
+      {
+        "field": "identified_gaps[1]",
+        "quote": "AC04 (comparing models in the same scenario) may imply sequential or batch evaluation rather than concurrent client access, and the rationale does not address this ambiguity."
+      },
+      {
+        "field": "identified_gaps[2]",
+        "quote": "AC02 and AC03 (isolation to the simulated environment, execution logging) are not used, and the rationale does not examine whether they affect the client-server interpretation."
+      }
+    ],
+    "coding_author": "Codex, assistant-authored post-hoc qualitative interpretation; not independent expert adjudication"
+  }
+]

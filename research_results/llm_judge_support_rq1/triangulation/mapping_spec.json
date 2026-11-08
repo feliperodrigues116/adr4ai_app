@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "authoritative_source": "research_results/expert_evaluation/expert_responses_original.csv",
+  "authoritative_source_sha256": "9cee7fc155ef767800349b07ecb72947502d75556cbf6e8a3738fb6b1a8eed5e",
+  "encoding": "utf-8-sig",
+  "delimiter": ",",
+  "case_column_regex": "^\\[(SYS[0-9]{2}-US[0-9]{2})\\|([0-9]{3})\\|(Q[1-5]|COMMENT)\\] (.+)$",
+  "system_column": "Qual sistema você avaliará?",
+  "system_value_regex": "^(SYS[0-9]{2}) - .+$",
+  "case_fields": ["Q1", "Q2", "Q3", "Q4", "Q5", "COMMENT"],
+  "rating_values": ["1", "2", "3", "4", "5"],
+  "expected_response_rows": 4,
+  "expected_case_count": 36,
+  "expected_column_count": 225,
+  "row_identity": "source CSV logical record number, header = 1; no inferred participant identity",
+  "routing": "Require exactly one response row per system. Only that system's cases may have nonempty cells in its row; other-system cells must be exactly empty. Require all five ratings for each assigned case. Never fill blank ratings.",
+  "scale": {"1": "Discordo totalmente", "5": "Concordo totalmente", "source": "research_results/google_forms/create_expert_evaluation_form.gs", "intermediate_labels": "Not specified in form code; retain numeric 2, 3, 4 without inventing verbal anchors."},
+  "transformations": "Parse explicit header identifiers; preserve zero-padded pattern ID. Parse exact allowed digit strings to integers. Preserve all raw ratings, comments (including whitespace), full question headers, source record and column numbers. Do not trim, impute, average raters, or substitute other questions for Q5.",
+  "analysis": "Primary analysis is support verdict by exact ordinal Q5 score; no conversion to common ground-truth labels. Supplementary 4–5, 3, 1–2 bands are explicit analyst groupings, not original verbal scale labels."
+}

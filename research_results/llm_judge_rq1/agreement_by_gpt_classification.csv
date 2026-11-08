@@ -1,0 +1,4 @@
+gpt_classification,gpt_count,same_classification,agreement_given_gpt_classification
+applicable,36,21,0.5833333333333334
+not_applicable,31,26,0.8387096774193549
+insufficient_information,773,266,0.34411384217335056

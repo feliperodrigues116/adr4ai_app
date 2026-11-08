@@ -1,0 +1,19 @@
+signal,label,verdict_subset,count,denominator,percent
+I1,Uncertainty/non-applicability boundary mentioned,all_nonsupported,418,428,97.663551
+I1,Uncertainty/non-applicability boundary mentioned,partially_supported,417,427,97.65808
+I1,Uncertainty/non-applicability boundary mentioned,unsupported,1,1,100.0
+I2,Boundary criticism in identified gaps,all_nonsupported,372,428,86.915888
+I2,Boundary criticism in identified gaps,partially_supported,372,427,87.119438
+I2,Boundary criticism in identified gaps,unsupported,0,1,0.0
+I3,Absence of contradiction or incompatibility acknowledged,all_nonsupported,204,428,47.663551
+I3,Absence of contradiction or incompatibility acknowledged,partially_supported,204,427,47.775176
+I3,Absence of contradiction or incompatibility acknowledged,unsupported,0,1,0.0
+I4,Reference omission criticized in identified gaps,all_nonsupported,26,428,6.074766
+I4,Reference omission criticized in identified gaps,partially_supported,26,427,6.088993
+I4,Reference omission criticized in identified gaps,unsupported,0,1,0.0
+I5,Incomplete rationale engagement criticized,all_nonsupported,391,428,91.35514
+I5,Incomplete rationale engagement criticized,partially_supported,390,427,91.334895
+I5,Incomplete rationale engagement criticized,unsupported,1,1,100.0
+I6,Alternative or non-unique interpretation mentioned,all_nonsupported,67,428,15.654206
+I6,Alternative or non-unique interpretation mentioned,partially_supported,67,427,15.690867
+I6,Alternative or non-unique interpretation mentioned,unsupported,0,1,0.0

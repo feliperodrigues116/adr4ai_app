@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "method": "Post-hoc single-assistant qualitative coding of all 15 applicable partial judgments; multi-label codes, full quoted gaps, analyst notes. Separate deterministic text signals for all insufficient-information non-supported records. No verdict reassignment.",
+  "qualitative_codes": {
+    "A1": {
+      "label": "Requirement-to-pattern-mechanism inference",
+      "definition": "Judge questions inferring a specific architectural mechanism from a functional goal or quality constraint.",
+      "scope": "applicable partial judgments"
+    },
+    "A2": {
+      "label": "Task variety versus composable pipeline",
+      "definition": "Judge distinguishes a list of operations from chained, modular, replaceable processing stages.",
+      "scope": "applicable partial judgments"
+    },
+    "A3": {
+      "label": "Related concern or scope is not identical intent",
+      "definition": "Judge distinguishes traceability, content scope, isolation, workflow, or product testability from the particular pattern concern.",
+      "scope": "applicable partial judgments"
+    },
+    "A4": {
+      "label": "ML or domain-framing transfer",
+      "definition": "Judge questions unstated ML, uncertainty, security, or ML-release assumptions; such framing alone does not prove non-support across domains.",
+      "scope": "applicable partial judgments"
+    },
+    "A5": {
+      "label": "Rationale or criterion coverage",
+      "definition": "Judge criticizes unexplained evidence mappings or omitted criteria. Citation of every criterion is not a protocol requirement.",
+      "scope": "applicable partial judgments"
+    },
+    "A6": {
+      "label": "Dependency versus interaction contract",
+      "definition": "Judge distinguishes causal dependency/shared context from blocking, client initiation, or concurrent access.",
+      "scope": "applicable partial judgments"
+    },
+    "A7": {
+      "label": "Alternative-design or necessity argument alongside a specific concern",
+      "definition": "The rationale invokes another possible design or asks why the mechanism is needed. Alternatives alone are not evidential defects; this flag marks mixed reasoning, not a revised verdict.",
+      "scope": "applicable partial judgments"
+    }
+  },
+  "text_signals": {
+    "I1": {
+      "label": "Uncertainty/non-applicability boundary mentioned",
+      "fields": [
+        "rationale",
+        "identified_gaps"
+      ],
+      "regex": "not_applicable|non-applicability|nonapplicability|contextual mismatch|rather than (?:genuine )?uncertainty|uncertainty rather than",
+      "interpretation": "Lexical mention, not automatic evidence of conflation."
+    },
+    "I2": {
+      "label": "Boundary criticism in identified gaps",
+      "fields": [
+        "identified_gaps"
+      ],
+      "regex": "not_applicable|non-applicability|nonapplicability|contextual mismatch|rather than (?:genuine )?uncertainty|uncertainty rather than",
+      "interpretation": "Judge raises the boundary as a limitation; no independent adjudication."
+    },
+    "I3": {
+      "label": "Absence of contradiction or incompatibility acknowledged",
+      "fields": [
+        "rationale"
+      ],
+      "regex": "no (?:explicit |clear )?(?:evidence of )?(?:contradiction|incompatibility)|neither .*?incompatib|do(?:es)? not (?:show|establish|demonstrate).*?(?:contradiction|incompatibility)|nothing .*?(?:contradict|incompatib)",
+      "interpretation": "Together with I2 this is a targeted review signal, not a confirmed protocol violation."
+    },
+    "I4": {
+      "label": "Reference omission criticized in identified gaps",
+      "fields": [
+        "identified_gaps"
+      ],
+      "regex": "(?:empty|no|missing|omitted|lack of) (?:original |requirement |specific |explicit )*(?:references|citations)|does not cite|without (?:specific |requirement )*(?:references|citations)|cites no|references (?:are|were) (?:empty|omitted|not)",
+      "interpretation": "Permitted empty references are not automatically defects; inspect the full quoted gap for material reasoning versus syntactic criticism."
+    },
+    "I5": {
+      "label": "Incomplete rationale engagement criticized",
+      "fields": [
+        "identified_gaps"
+      ],
+      "regex": "does not (?:address|engage|discuss|consider|explain)|ignores|not addressed|not discussed",
+      "interpretation": "Could concern material evidence not discussed, or impose an excessive explanation burden. Text matching cannot settle which."
+    },
+    "I6": {
+      "label": "Alternative or non-unique interpretation mentioned",
+      "fields": [
+        "rationale",
+        "identified_gaps"
+      ],
+      "regex": "alternative|could (?:just |equally )?(?:as well|be)|not (?:the |clearly the )?only|other patterns|could conceivably",
+      "interpretation": "Alternatives are not, by themselves, deficiencies. Presence is a descriptive signal only."
+    }
+  },
+  "text_rule_details": {
+    "flags": "re.IGNORECASE; each regex searched independently within each recorded rationale or individual gap; no text normalization; multi-label; one case counted once per code",
+    "audit": "Each match retains the complete originating rationale or gap verbatim; denominators are reported explicitly. Text signals are not exhaustive semantic coding."
+  }
+}

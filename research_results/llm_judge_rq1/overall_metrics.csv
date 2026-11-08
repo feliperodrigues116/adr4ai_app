@@ -1,0 +1,23 @@
+metric,value,denominator_note
+pairs,840,fractions are 0–1; blank means undefined
+agreements,313,fractions are 0–1; blank means undefined
+disagreements,527,fractions are 0–1; blank means undefined
+overall_agreement,0.3726190476190476,fractions are 0–1; blank means undefined
+expected_agreement_from_marginals,0.33366496598639456,fractions are 0–1; blank means undefined
+cohens_kappa,0.058460203417516364,fractions are 0–1; blank means undefined
+gpt_applicable,36,fractions are 0–1; blank means undefined
+claude_applicable,30,fractions are 0–1; blank means undefined
+both_applicable,21,fractions are 0–1; blank means undefined
+gpt_applicable_not_claude_applicable,15,fractions are 0–1; blank means undefined
+claude_applicable_not_gpt_applicable,9,fractions are 0–1; blank means undefined
+applicable_union,45,fractions are 0–1; blank means undefined
+positive_jaccard,0.4666666666666667,fractions are 0–1; blank means undefined
+gpt_selected_overlap_fraction,0.5833333333333334,fractions are 0–1; blank means undefined
+claude_selected_overlap_fraction,0.7,fractions are 0–1; blank means undefined
+positive_dice_agreement,0.6363636363636364,fractions are 0–1; blank means undefined
+gpt_not_applicable,31,fractions are 0–1; blank means undefined
+claude_not_applicable,528,fractions are 0–1; blank means undefined
+gpt_insufficient_information,773,fractions are 0–1; blank means undefined
+claude_insufficient_information,282,fractions are 0–1; blank means undefined
+gpt_insufficient_claude_not_applicable,498,fractions are 0–1; blank means undefined
+gpt_not_applicable_claude_insufficient,5,fractions are 0–1; blank means undefined

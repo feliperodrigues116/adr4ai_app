@@ -1,0 +1,11 @@
+{
+  "type": "object",
+  "properties": {
+    "verdict": {"type": "string", "enum": ["supported", "partially_supported", "unsupported"]},
+    "evidence_refs": {"type": "array", "items": {"type": "string"}},
+    "rationale": {"type": "string"},
+    "identified_gaps": {"type": "array", "items": {"type": "string"}}
+  },
+  "required": ["verdict", "evidence_refs", "rationale", "identified_gaps"],
+  "additionalProperties": false
+}

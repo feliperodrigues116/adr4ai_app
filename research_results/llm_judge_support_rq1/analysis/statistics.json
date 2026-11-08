@@ -1,0 +1,44 @@
+{
+  "analytical_pairs": 840,
+  "applicable_verdicts": {
+    "partially_supported": 15,
+    "supported": 21
+  },
+  "boundary_gap_and_no_incompatibility_signal_intersection": 179,
+  "expected_pairs": 840,
+  "gpt_classifications": {
+    "applicable": 36,
+    "insufficient_information": 773,
+    "not_applicable": 31
+  },
+  "insufficient_nonsupported_denominator": 428,
+  "metrics_are_descriptive_support_not_ground_truth_performance": true,
+  "operational_policy_id": "adr4ai-rq1-support-validation-continuation-op1",
+  "origins": {
+    "official_api_validated": 839,
+    "technically_corrected_analytical": 1
+  },
+  "qualitative_code_counts": {
+    "A1": 12,
+    "A2": 3,
+    "A3": 7,
+    "A4": 4,
+    "A5": 4,
+    "A6": 2,
+    "A7": 7
+  },
+  "scientific_protocol_id": "adr4ai-rq1-response-conditioned-support-v1.1",
+  "support_verdicts": {
+    "partially_supported": 443,
+    "supported": 396,
+    "unsupported": 1
+  },
+  "text_signal_unique_case_counts": {
+    "I1": 418,
+    "I2": 372,
+    "I3": 204,
+    "I4": 26,
+    "I5": 391,
+    "I6": 67
+  }
+}

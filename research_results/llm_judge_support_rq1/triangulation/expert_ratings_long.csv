@@ -1,0 +1,181 @@
+user_story_id,pattern_id,system_id,source_csv_record,source_column,source_header,question,raw_rating,rating
+SYS01-US01,001,SYS01,3,6,[SYS01-US01|001|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,5,5
+SYS01-US01,001,SYS01,3,7,"[SYS01-US01|001|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,5,5
+SYS01-US01,001,SYS01,3,8,"[SYS01-US01|001|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,4,4
+SYS01-US01,001,SYS01,3,9,"[SYS01-US01|001|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,5,5
+SYS01-US01,001,SYS01,3,10,[SYS01-US01|001|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,5,5
+SYS01-US01,016,SYS01,3,12,[SYS01-US01|016|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,5,5
+SYS01-US01,016,SYS01,3,13,"[SYS01-US01|016|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,5,5
+SYS01-US01,016,SYS01,3,14,"[SYS01-US01|016|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,5,5
+SYS01-US01,016,SYS01,3,15,"[SYS01-US01|016|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,5,5
+SYS01-US01,016,SYS01,3,16,[SYS01-US01|016|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,5,5
+SYS01-US01,060,SYS01,3,18,[SYS01-US01|060|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,5,5
+SYS01-US01,060,SYS01,3,19,"[SYS01-US01|060|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,5,5
+SYS01-US01,060,SYS01,3,20,"[SYS01-US01|060|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,5,5
+SYS01-US01,060,SYS01,3,21,"[SYS01-US01|060|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,5,5
+SYS01-US01,060,SYS01,3,22,[SYS01-US01|060|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,5,5
+SYS01-US02,003,SYS01,3,24,[SYS01-US02|003|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,3,3
+SYS01-US02,003,SYS01,3,25,"[SYS01-US02|003|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,3,3
+SYS01-US02,003,SYS01,3,26,"[SYS01-US02|003|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,2,2
+SYS01-US02,003,SYS01,3,27,"[SYS01-US02|003|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,3,3
+SYS01-US02,003,SYS01,3,28,[SYS01-US02|003|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,3,3
+SYS01-US03,001,SYS01,3,30,[SYS01-US03|001|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,5,5
+SYS01-US03,001,SYS01,3,31,"[SYS01-US03|001|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,5,5
+SYS01-US03,001,SYS01,3,32,"[SYS01-US03|001|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,5,5
+SYS01-US03,001,SYS01,3,33,"[SYS01-US03|001|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,4,4
+SYS01-US03,001,SYS01,3,34,[SYS01-US03|001|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,4,4
+SYS01-US03,013,SYS01,3,36,[SYS01-US03|013|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,5,5
+SYS01-US03,013,SYS01,3,37,"[SYS01-US03|013|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,5,5
+SYS01-US03,013,SYS01,3,38,"[SYS01-US03|013|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,5,5
+SYS01-US03,013,SYS01,3,39,"[SYS01-US03|013|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,5,5
+SYS01-US03,013,SYS01,3,40,[SYS01-US03|013|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,5,5
+SYS01-US03,060,SYS01,3,42,[SYS01-US03|060|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,5,5
+SYS01-US03,060,SYS01,3,43,"[SYS01-US03|060|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,5,5
+SYS01-US03,060,SYS01,3,44,"[SYS01-US03|060|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,5,5
+SYS01-US03,060,SYS01,3,45,"[SYS01-US03|060|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,5,5
+SYS01-US03,060,SYS01,3,46,[SYS01-US03|060|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,5,5
+SYS02-US01,002,SYS02,5,48,[SYS02-US01|002|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,5,5
+SYS02-US01,002,SYS02,5,49,"[SYS02-US01|002|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,4,4
+SYS02-US01,002,SYS02,5,50,"[SYS02-US01|002|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,5,5
+SYS02-US01,002,SYS02,5,51,"[SYS02-US01|002|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,3,3
+SYS02-US01,002,SYS02,5,52,[SYS02-US01|002|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,5,5
+SYS02-US01,004,SYS02,5,54,[SYS02-US01|004|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,5,5
+SYS02-US01,004,SYS02,5,55,"[SYS02-US01|004|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,5,5
+SYS02-US01,004,SYS02,5,56,"[SYS02-US01|004|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,5,5
+SYS02-US01,004,SYS02,5,57,"[SYS02-US01|004|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,5,5
+SYS02-US01,004,SYS02,5,58,[SYS02-US01|004|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,5,5
+SYS02-US01,014,SYS02,5,60,[SYS02-US01|014|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,3,3
+SYS02-US01,014,SYS02,5,61,"[SYS02-US01|014|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,3,3
+SYS02-US01,014,SYS02,5,62,"[SYS02-US01|014|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,3,3
+SYS02-US01,014,SYS02,5,63,"[SYS02-US01|014|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,3,3
+SYS02-US01,014,SYS02,5,64,[SYS02-US01|014|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,3,3
+SYS02-US01,045,SYS02,5,66,[SYS02-US01|045|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,5,5
+SYS02-US01,045,SYS02,5,67,"[SYS02-US01|045|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,5,5
+SYS02-US01,045,SYS02,5,68,"[SYS02-US01|045|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,5,5
+SYS02-US01,045,SYS02,5,69,"[SYS02-US01|045|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,5,5
+SYS02-US01,045,SYS02,5,70,[SYS02-US01|045|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,3,3
+SYS02-US01,050,SYS02,5,72,[SYS02-US01|050|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,5,5
+SYS02-US01,050,SYS02,5,73,"[SYS02-US01|050|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,5,5
+SYS02-US01,050,SYS02,5,74,"[SYS02-US01|050|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,5,5
+SYS02-US01,050,SYS02,5,75,"[SYS02-US01|050|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,5,5
+SYS02-US01,050,SYS02,5,76,[SYS02-US01|050|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,5,5
+SYS02-US02,001,SYS02,5,78,[SYS02-US02|001|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,5,5
+SYS02-US02,001,SYS02,5,79,"[SYS02-US02|001|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,5,5
+SYS02-US02,001,SYS02,5,80,"[SYS02-US02|001|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,5,5
+SYS02-US02,001,SYS02,5,81,"[SYS02-US02|001|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,5,5
+SYS02-US02,001,SYS02,5,82,[SYS02-US02|001|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,5,5
+SYS02-US02,002,SYS02,5,84,[SYS02-US02|002|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,5,5
+SYS02-US02,002,SYS02,5,85,"[SYS02-US02|002|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,5,5
+SYS02-US02,002,SYS02,5,86,"[SYS02-US02|002|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,3,3
+SYS02-US02,002,SYS02,5,87,"[SYS02-US02|002|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,3,3
+SYS02-US02,002,SYS02,5,88,[SYS02-US02|002|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,3,3
+SYS02-US02,060,SYS02,5,90,[SYS02-US02|060|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,4,4
+SYS02-US02,060,SYS02,5,91,"[SYS02-US02|060|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,4,4
+SYS02-US02,060,SYS02,5,92,"[SYS02-US02|060|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,4,4
+SYS02-US02,060,SYS02,5,93,"[SYS02-US02|060|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,5,5
+SYS02-US02,060,SYS02,5,94,[SYS02-US02|060|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,3,3
+SYS02-US02,064,SYS02,5,96,[SYS02-US02|064|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,5,5
+SYS02-US02,064,SYS02,5,97,"[SYS02-US02|064|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,5,5
+SYS02-US02,064,SYS02,5,98,"[SYS02-US02|064|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,5,5
+SYS02-US02,064,SYS02,5,99,"[SYS02-US02|064|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,5,5
+SYS02-US02,064,SYS02,5,100,[SYS02-US02|064|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,5,5
+SYS02-US02,070,SYS02,5,102,[SYS02-US02|070|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,5,5
+SYS02-US02,070,SYS02,5,103,"[SYS02-US02|070|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,5,5
+SYS02-US02,070,SYS02,5,104,"[SYS02-US02|070|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,3,3
+SYS02-US02,070,SYS02,5,105,"[SYS02-US02|070|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,4,4
+SYS02-US02,070,SYS02,5,106,[SYS02-US02|070|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,4,4
+SYS02-US03,002,SYS02,5,108,[SYS02-US03|002|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,5,5
+SYS02-US03,002,SYS02,5,109,"[SYS02-US03|002|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,5,5
+SYS02-US03,002,SYS02,5,110,"[SYS02-US03|002|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,5,5
+SYS02-US03,002,SYS02,5,111,"[SYS02-US03|002|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,5,5
+SYS02-US03,002,SYS02,5,112,[SYS02-US03|002|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,5,5
+SYS02-US03,045,SYS02,5,114,[SYS02-US03|045|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,5,5
+SYS02-US03,045,SYS02,5,115,"[SYS02-US03|045|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,5,5
+SYS02-US03,045,SYS02,5,116,"[SYS02-US03|045|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,5,5
+SYS02-US03,045,SYS02,5,117,"[SYS02-US03|045|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,5,5
+SYS02-US03,045,SYS02,5,118,[SYS02-US03|045|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,5,5
+SYS03-US01,001,SYS03,2,120,[SYS03-US01|001|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,5,5
+SYS03-US01,001,SYS03,2,121,"[SYS03-US01|001|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,5,5
+SYS03-US01,001,SYS03,2,122,"[SYS03-US01|001|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,4,4
+SYS03-US01,001,SYS03,2,123,"[SYS03-US01|001|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,4,4
+SYS03-US01,001,SYS03,2,124,[SYS03-US01|001|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,5,5
+SYS03-US02,001,SYS03,2,126,[SYS03-US02|001|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,4,4
+SYS03-US02,001,SYS03,2,127,"[SYS03-US02|001|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,5,5
+SYS03-US02,001,SYS03,2,128,"[SYS03-US02|001|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,5,5
+SYS03-US02,001,SYS03,2,129,"[SYS03-US02|001|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,4,4
+SYS03-US02,001,SYS03,2,130,[SYS03-US02|001|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,5,5
+SYS03-US02,003,SYS03,2,132,[SYS03-US02|003|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,4,4
+SYS03-US02,003,SYS03,2,133,"[SYS03-US02|003|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,5,5
+SYS03-US02,003,SYS03,2,134,"[SYS03-US02|003|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,5,5
+SYS03-US02,003,SYS03,2,135,"[SYS03-US02|003|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,5,5
+SYS03-US02,003,SYS03,2,136,[SYS03-US02|003|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,5,5
+SYS03-US02,014,SYS03,2,138,[SYS03-US02|014|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,4,4
+SYS03-US02,014,SYS03,2,139,"[SYS03-US02|014|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,4,4
+SYS03-US02,014,SYS03,2,140,"[SYS03-US02|014|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,5,5
+SYS03-US02,014,SYS03,2,141,"[SYS03-US02|014|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,5,5
+SYS03-US02,014,SYS03,2,142,[SYS03-US02|014|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,5,5
+SYS03-US02,044,SYS03,2,144,[SYS03-US02|044|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,5,5
+SYS03-US02,044,SYS03,2,145,"[SYS03-US02|044|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,4,4
+SYS03-US02,044,SYS03,2,146,"[SYS03-US02|044|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,4,4
+SYS03-US02,044,SYS03,2,147,"[SYS03-US02|044|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,5,5
+SYS03-US02,044,SYS03,2,148,[SYS03-US02|044|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,5,5
+SYS03-US02,050,SYS03,2,150,[SYS03-US02|050|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,5,5
+SYS03-US02,050,SYS03,2,151,"[SYS03-US02|050|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,4,4
+SYS03-US02,050,SYS03,2,152,"[SYS03-US02|050|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,4,4
+SYS03-US02,050,SYS03,2,153,"[SYS03-US02|050|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,4,4
+SYS03-US02,050,SYS03,2,154,[SYS03-US02|050|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,4,4
+SYS03-US03,003,SYS03,2,156,[SYS03-US03|003|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,5,5
+SYS03-US03,003,SYS03,2,157,"[SYS03-US03|003|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,5,5
+SYS03-US03,003,SYS03,2,158,"[SYS03-US03|003|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,5,5
+SYS03-US03,003,SYS03,2,159,"[SYS03-US03|003|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,5,5
+SYS03-US03,003,SYS03,2,160,[SYS03-US03|003|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,5,5
+SYS03-US03,050,SYS03,2,162,[SYS03-US03|050|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,5,5
+SYS03-US03,050,SYS03,2,163,"[SYS03-US03|050|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,4,4
+SYS03-US03,050,SYS03,2,164,"[SYS03-US03|050|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,4,4
+SYS03-US03,050,SYS03,2,165,"[SYS03-US03|050|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,5,5
+SYS03-US03,050,SYS03,2,166,[SYS03-US03|050|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,5,5
+SYS04-US02,003,SYS04,4,168,[SYS04-US02|003|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,3,3
+SYS04-US02,003,SYS04,4,169,"[SYS04-US02|003|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,3,3
+SYS04-US02,003,SYS04,4,170,"[SYS04-US02|003|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,4,4
+SYS04-US02,003,SYS04,4,171,"[SYS04-US02|003|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,3,3
+SYS04-US02,003,SYS04,4,172,[SYS04-US02|003|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,3,3
+SYS04-US02,028,SYS04,4,174,[SYS04-US02|028|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,2,2
+SYS04-US02,028,SYS04,4,175,"[SYS04-US02|028|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,2,2
+SYS04-US02,028,SYS04,4,176,"[SYS04-US02|028|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,2,2
+SYS04-US02,028,SYS04,4,177,"[SYS04-US02|028|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,3,3
+SYS04-US02,028,SYS04,4,178,[SYS04-US02|028|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,3,3
+SYS04-US03,001,SYS04,4,180,[SYS04-US03|001|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,2,2
+SYS04-US03,001,SYS04,4,181,"[SYS04-US03|001|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,2,2
+SYS04-US03,001,SYS04,4,182,"[SYS04-US03|001|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,2,2
+SYS04-US03,001,SYS04,4,183,"[SYS04-US03|001|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,2,2
+SYS04-US03,001,SYS04,4,184,[SYS04-US03|001|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,2,2
+SYS04-US03,003,SYS04,4,186,[SYS04-US03|003|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,4,4
+SYS04-US03,003,SYS04,4,187,"[SYS04-US03|003|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,4,4
+SYS04-US03,003,SYS04,4,188,"[SYS04-US03|003|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,4,4
+SYS04-US03,003,SYS04,4,189,"[SYS04-US03|003|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,4,4
+SYS04-US03,003,SYS04,4,190,[SYS04-US03|003|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,4,4
+SYS04-US03,014,SYS04,4,192,[SYS04-US03|014|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,4,4
+SYS04-US03,014,SYS04,4,193,"[SYS04-US03|014|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,4,4
+SYS04-US03,014,SYS04,4,194,"[SYS04-US03|014|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,4,4
+SYS04-US03,014,SYS04,4,195,"[SYS04-US03|014|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,4,4
+SYS04-US03,014,SYS04,4,196,[SYS04-US03|014|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,4,4
+SYS04-US03,015,SYS04,4,198,[SYS04-US03|015|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,3,3
+SYS04-US03,015,SYS04,4,199,"[SYS04-US03|015|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,3,3
+SYS04-US03,015,SYS04,4,200,"[SYS04-US03|015|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,2,2
+SYS04-US03,015,SYS04,4,201,"[SYS04-US03|015|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,2,2
+SYS04-US03,015,SYS04,4,202,[SYS04-US03|015|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,2,2
+SYS04-US03,028,SYS04,4,204,[SYS04-US03|028|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,5,5
+SYS04-US03,028,SYS04,4,205,"[SYS04-US03|028|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,5,5
+SYS04-US03,028,SYS04,4,206,"[SYS04-US03|028|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,4,4
+SYS04-US03,028,SYS04,4,207,"[SYS04-US03|028|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,4,4
+SYS04-US03,028,SYS04,4,208,[SYS04-US03|028|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,5,5
+SYS04-US03,036,SYS04,4,210,[SYS04-US03|036|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,5,5
+SYS04-US03,036,SYS04,4,211,"[SYS04-US03|036|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,4,4
+SYS04-US03,036,SYS04,4,212,"[SYS04-US03|036|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,4,4
+SYS04-US03,036,SYS04,4,213,"[SYS04-US03|036|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,5,5
+SYS04-US03,036,SYS04,4,214,[SYS04-US03|036|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,5,5
+SYS04-US03,043,SYS04,4,216,[SYS04-US03|043|Q1] A decisão proposta no ADR é adequada para atender às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q1,3,3
+SYS04-US03,043,SYS04,4,217,"[SYS04-US03|043|Q2] O ADR apresenta uma decisão arquitetural suficientemente fundamentada, permitindo compreender por que essa decisão foi proposta para esse contexto?",Q2,2,2
+SYS04-US03,043,SYS04,4,218,"[SYS04-US03|043|Q3] O ADR apresenta adequadamente as consequências relevantes da decisão, incluindo seus benefícios e possíveis impactos ou trade-offs?",Q3,2,2
+SYS04-US03,043,SYS04,4,219,"[SYS04-US03|043|Q4] Considerando o sistema em que você atua, este ADR seria útil como registro para apoiar a compreensão, discussão ou evolução dessa decisão arquitetural?",Q4,3,3
+SYS04-US03,043,SYS04,4,220,[SYS04-US03|043|Q5] O padrão arquitetural utilizado como base para gerar este ADR é aplicável às necessidades expressas na história de usuário e em seus critérios de aceitação?,Q5,3,3

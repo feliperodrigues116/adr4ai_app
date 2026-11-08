@@ -1,0 +1,19 @@
+{
+  "corrections": [
+    {
+      "approved": true,
+      "approved_at": "2026-11-08T18:14:39.440580+00:00",
+      "attempt_id": "21f66b1f-300e-4732-b071-b583389f4dc7",
+      "field": "evidence_refs",
+      "raw_response_sha256": "309a2470a9acd80da138e97d055f1f2811811cfbd68c774843d8331958fc4c6d",
+      "reason": "Replace only malformed SYS02-US01-US01 with SYS02-US01. The case has one User Story, identified exactly as SYS02-US01, whose original text is: Eu como usuário desejo que o sistema gere um documento inicial de acordo com o registro cadastrado no sistema de licitações. Attempt 1 explicitly states 'The user story also asks the system to generate an initial document'; attempt 2 independently states 'The story is about generating an initial document from a registered record'. These refer to this uniquely identified User Story, not a second story or an acceptance criterion. The malformed label duplicates the US01 segment. AC02 and AC05 already have correct separate references. Preserve reference order; do not drop evidence or change verdict, rationale, or identified_gaps. Use the earliest recorded attempt (attempt 1), not the most favorable wording; retain attempt 2 only for corroboration. This is an assistant-performed technical review under the user's explicit conditional authorization, not an independent human architectural adjudication.",
+      "replacement": [
+        "SYS02-US01-AC02",
+        "SYS02-US01-AC05",
+        "SYS02-US01"
+      ],
+      "reviewed_by": "Codex technical review under user's explicit conditional authorization; no independent human adjudication"
+    }
+  ],
+  "scientific_manifest_sha256": "7a0387155bfe737e89e46f06feaaa4df464f4b760cbb6731518abd54fbf3dcef"
+}

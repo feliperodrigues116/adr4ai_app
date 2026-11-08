@@ -1,0 +1,26 @@
+{
+  "analytical_coverage_complete": true,
+  "both_original_rationales_preserved": true,
+  "correction_is_not_original_api_validation": true,
+  "correction_timestamp": "2026-11-08T18:14:39.440580+00:00",
+  "expected_pairs": 840,
+  "official_api_validated_judgments": 839,
+  "official_experiment_complete": false,
+  "official_unresolved_pairs": [
+    [
+      "SYS02-US01",
+      "051"
+    ]
+  ],
+  "patterns": 70,
+  "review_authority": "User expressly authorized a correction conditional on unambiguous evidence; mapping reviewed by Codex, not independently adjudicated by a human.",
+  "schema_and_reference_validation": "passed for all 840 analytical judgments using unchanged protocol validator",
+  "selected_rationale_preserved_verbatim": true,
+  "source_response_id": "msg_011CgqWNf2yhXzAYoUTz9wP6",
+  "status": "passed",
+  "systems": 4,
+  "technically_corrected_analytical_records": 1,
+  "total_analytical_coverage": 840,
+  "unique_analytical_pairs": 840,
+  "user_stories": 12
+}

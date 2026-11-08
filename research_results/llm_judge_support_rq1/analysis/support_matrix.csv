@@ -1,0 +1,10 @@
+group,gpt_classification,verdict,count,denominator,within_category_percent
+all,applicable,supported,21,36,58.333333
+all,applicable,partially_supported,15,36,41.666667
+all,applicable,unsupported,0,36,0.0
+all,not_applicable,supported,30,31,96.774194
+all,not_applicable,partially_supported,1,31,3.225806
+all,not_applicable,unsupported,0,31,0.0
+all,insufficient_information,supported,345,773,44.631307
+all,insufficient_information,partially_supported,427,773,55.239327
+all,insufficient_information,unsupported,1,773,0.129366

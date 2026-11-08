@@ -1,0 +1,20 @@
+{
+  "all_selected_support_records_are_original_validated": true,
+  "ambiguous_matches": 0,
+  "authoritative_source_sha256": "9cee7fc155ef767800349b07ecb72947502d75556cbf6e8a3738fb6b1a8eed5e",
+  "case_columns": 216,
+  "complete_Q5_cases": 36,
+  "mapping_validated_before_statistics": true,
+  "matched_unique_selected_cases": 36,
+  "metadata_columns": 9,
+  "operational_policy_id": "adr4ai-rq1-support-validation-continuation-op1",
+  "optional_comments_preserved_including_whitespace": true,
+  "outside_system_case_blocks_verified_blank": 108,
+  "previous_840_record_consolidation_and_analysis_provenance": "verified read-only",
+  "ratings_imputed_or_substituted": 0,
+  "required_Q1_to_Q5_ratings": 180,
+  "scientific_protocol_id": "adr4ai-rq1-response-conditioned-support-v1.1",
+  "source_columns": 225,
+  "source_response_rows": 4,
+  "status": "passed"
+}
